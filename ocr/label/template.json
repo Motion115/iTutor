@@ -1,0 +1,19 @@
+{
+    "Icon": [
+        "back",
+        "localizer"
+    ],
+    "Button": [
+        "G312 and Lvyuan Road Intersection",
+        "Pick up at G312 and Lvyuan Road Inter..."
+    ],
+    "Input": [
+        "Enter your destination"
+    ],
+    "Tag": [
+        "Airport",
+        "Schedule",
+        "For others",
+        "6-seater"
+    ]
+}
