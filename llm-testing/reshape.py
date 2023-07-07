@@ -2,8 +2,8 @@ from tqdm import tqdm
 import os
 from PIL import Image
 
-base_path = './ocr/source/'
-target_path = './ocr/img/'
+base_path = './llm-testing/source/'
+target_path = './llm-testing/img/'
 
 files = os.listdir(base_path)
 for f in tqdm(files):

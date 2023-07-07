@@ -5,8 +5,8 @@ from tqdm import tqdm
 import json
 import os
 
-base_path = './ocr/img/'
-target_path = './ocr/texts/'
+base_path = './llm-testing/img/'
+target_path = './llm-testing/texts/'
 
 # list files in base_path
 files = os.listdir(base_path)
