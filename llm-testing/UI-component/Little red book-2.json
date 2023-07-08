@@ -1,0 +1,12 @@
+{
+    "Icon": [
+        "Search",
+        "Camera"
+    ],
+    "Button": [
+        "Cancel"
+    ],
+    "Input": [
+        "Search posts, users and products"
+    ]
+}
