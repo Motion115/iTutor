@@ -1,0 +1,23 @@
+{
+    "Icon": [
+        "Audio", 
+        "Menu",
+        "localizer"
+    ],
+    "Input": [
+        "Search here"
+    ],
+    "Button": [
+        "Restaurants",
+        "Hotels",
+        "Shopping",
+        "Coffee"
+    ]
+    "Menu": [
+        "Explore",
+        "Go",
+        "Saved",
+        "Contribute",
+        "Updates"
+    ]
+}
