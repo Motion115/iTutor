@@ -1,0 +1,27 @@
+{
+    "Icon": [
+        "Subnodes",
+        "Search",
+        "Heart"
+    ],
+    "Input": [
+        "Food, groceries, drinks; etc."
+    ],
+    "Container": [
+        "$0 Delivery Fee (Spend $10)",
+        "The Melt-La Jolla Village",
+        "0.99 Delivery Fee",
+        "20-35 min",
+        "Free Item (Spend $10)",
+        "Speedway (4202 CLAIREMONT MESA BL_",
+        "2.74 Delivery Fee",
+        "20-35 min"
+    ],
+    "Menu": [
+        "Home",
+        "Eat",
+        "Shop",
+        "Account",
+        "Way"
+    ]
+}
