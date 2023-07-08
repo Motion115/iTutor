@@ -1,0 +1,22 @@
+{
+    "Menu": [
+        "Home",
+        "Friends",
+        "Inbox",
+        "Profile"
+    ],
+    "Icon": [
+        "Plus",
+        "Live",
+        "Search",
+        "Heart",
+        "Comment",
+        "Send",
+        "Bookmark"
+    ],
+    "Button": [
+        "Explore",
+        "Following",
+        "For You"
+    ]
+}
