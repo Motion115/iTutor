@@ -1,12 +1,12 @@
-# iTutor: Context-aware Operation Guidance for Elders in Using Smartphone Applications
+# iTutor: A Generative Tutorial System for Teaching the Elders to Use Smartphone Applications
 
-## Technical pipeline
+## Technicals
 
 Foundation project: [UI2Vec](https://github.com/Motion115/UI-embeddings)
 
-## Demo System
+## Demo
 
 
 
-## Application System
+## Applications
 
