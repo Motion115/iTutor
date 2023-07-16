@@ -45,6 +45,18 @@ const defaultContentStyle = {
     padding: '10px 10px 10px 10px',
 }
 
+const defaultHeaderFooterStyle = {
+    width: '90%',
+    margin: '0 auto',
+    height: "auto",
+    background: "#4C6080",
+    lineHeight: "1",
+    justifyContent: 'center',
+    alignItems: 'center',
+    textAlign: 'center',
+    padding: '10px 10px 10px 10px',
+}
+
 class GlobalLayout extends React.Component {
     constructor(props) {
         super(props);
@@ -81,20 +93,7 @@ class GlobalLayout extends React.Component {
         return (
             <ConfigProvider theme={{token: {...defaultData}}}>
                 <Layout>
-                    <Header
-                        style={{
-                            width: '100%',
-                            margin: '0 auto',
-                            minHeight: "180px",
-                            height: "auto",
-                            background: "#4C6080",
-                            lineHeight: "1",
-                            justifyContent: 'center',
-                            alignItems: 'center',
-                            textAlign: 'center',
-                            padding: '10px 10px 10px 10px',
-                        }}
-                    >
+                    <Header style={defaultHeaderFooterStyle}>
                         <Title level={2} style={{color: "#ffffff"}}>iTutor</Title>
                         <Title level={4} style={{color: "#ffffff"}}>A Generative Tutorial System for Teaching the Elders to Use Smartphone Applications</Title>
                         <p>TJHCI-X</p>
@@ -106,23 +105,32 @@ class GlobalLayout extends React.Component {
                     <Content style={defaultContentStyle}>
                         <Introduction />
 
+                    
+                        <Title level={3} style={{ textAlign: 'center', justifyContent: 'center' }}>
+                            <b>Demonstration</b>
+                        </Title>
+
+                        <Title level={3} style={{ textAlign: 'center', justifyContent: 'center' }}>
+                            <b>Explaination</b>
+                        </Title>
                         <Menu
                             onClick={this.switchModule}
                             selectedKeys={[this.state.current]}
                             mode="horizontal"
                             items={MODULE_SELECTOR}
-                            style={{ alignItems: "center" }}
+                            style={{ alignItems: "center", textAlign: 'center', justifyContent: 'center', width: "60%", margin: "0 auto" }}
                         />
                         {this.conditionallyRenderModule()}
+
+                        <Title level={3} style={{ textAlign: 'center', justifyContent: 'center' }}>
+                            <b>Video</b>
+                        </Title>
                     </Content>
 
-                    <Footer
-                        style={{
-                            textAlign: 'center',
-                            backgroundColor: '#4C6080',
-                        }}
-                    >
-                        Created by TJHCI-X ©2023 with <a href="https://ant.design/" target='_blank' rel="noopener noreferrer">Ant Design</a>
+                    <Footer style={defaultHeaderFooterStyle}>
+                        <Paragraph style={{color: "#ffffff"}}>
+                            Created by TJHCI-X ©2023 with <a href="https://ant.design/" target='_blank' rel="noopener noreferrer">Ant Design</a>
+                        </Paragraph>
                     </Footer>
                 </Layout>
 

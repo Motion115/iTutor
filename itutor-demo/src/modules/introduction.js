@@ -1,8 +1,11 @@
 import React from 'react';
+import teaser_pic from '../assets/teaser-v3.jpg';
 import { Typography } from 'antd';
 import { Layout, Image } from 'antd'
 const { Title, Paragraph, Text, Link } = Typography;
 const { Header, Footer, Sider, Content } = Layout;
+
+// 
 
 export default class InformationRetrievalModule extends React.Component {
     constructor(props) {
@@ -18,8 +21,8 @@ export default class InformationRetrievalModule extends React.Component {
                     </Title>
 
                     <Image
-                        width={200}
-                        src="src/assets/teaser-v3.jpg"
+                        src={teaser_pic}
+                        style={{ width: "80%", height: "auto", display: 'block', margin: 'auto' }}
                     />
 
                     <Paragraph style={{fontSize: "16px"}}>
