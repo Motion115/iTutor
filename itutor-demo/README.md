@@ -28,7 +28,7 @@ yarn start
 
 - Folders & File names: use dashes, all lowercase (E.g. `picture-selector.js`)
 - Classname for React & others: Upper camel case (E.g. `class PictureSelctor`)
-- Function/Method name: Lower camel case (E.g. `createLink()`)
+- Function/Method name, global style for antd: Lower camel case (E.g. `createLink()`)
 - Variable name: use underscore and all lowercase (E.g. `value_counter`)
 
 ## Structure
