@@ -1,8 +1,6 @@
 import React from 'react';
-import teaser_pic from '../assets/teaser-v3.jpg';
 import { Typography } from 'antd';
 import { Layout, Row } from 'antd'
-import ReactPlayer from 'react-player'
 
 
 const { Title, Paragraph, Text, Link } = Typography;
