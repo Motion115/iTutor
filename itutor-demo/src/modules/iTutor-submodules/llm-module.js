@@ -9,9 +9,7 @@ export default class InformationRetrievalModule extends React.Component {
 
     render() {
         return (
-            <Typography>
-                <Title>Information Retrieval</Title>
-            </Typography>
+            <Text>LLM</Text>
 
         );
     }

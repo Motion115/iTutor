@@ -3,38 +3,21 @@ import { Breadcrumb, Layout, Menu, theme, ConfigProvider } from 'antd';
 import { Row, Col } from 'antd';
 import { Button } from 'antd';
 import buttonStyle from './stylesheet.js';
-import { LaptopOutlined, NotificationOutlined, UserOutlined, GithubOutlined, FilePdfOutlined } from '@ant-design/icons';
+import { GithubOutlined, FilePdfOutlined } from '@ant-design/icons';
 import { Divider, Typography } from 'antd';
 import Introduction from './modules/introduction.js'
-import InformationRetrievalModule from "./modules/ir-module.js"
-import LLMModule from "./modules/llm-module.js"
-import TranslationModule from "./modules/translation-module.js"
+import Demonstration from './modules/demonstration.js'
+import Explanation from './modules/explanation.js'
+import ConceptVideo from './modules/concept-video.js';
 
 const { Title, Paragraph, Text, Link } = Typography;
 const { Header, Footer, Sider, Content } = Layout;
 
-const MODULE_SELECTOR = [
-    {
-        key: "1",
-        icon: React.createElement(UserOutlined),
-        label: "Metadata Retrieval",
-        //children: [],
-    },
-    {
-        key: "2",
-        icon: React.createElement(LaptopOutlined),
-        label: "Instruction Generation by LLMs",
-    },
-    {
-        key: "3",
-        icon: React.createElement(NotificationOutlined),
-        label: "Instruction to Interface Translation",
-    }
-]
+
 
 const defaultData = {
     borderRadius: 6,
-    colorPrimary: '#76BE26',
+    colorPrimary: '#DD78FF',
 };
 
 const defaultContentStyle = {
@@ -58,35 +41,10 @@ const defaultHeaderFooterStyle = {
 }
 
 class GlobalLayout extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            current: '1',
-        };
-    }
 
-    switchModule = (e) => {
-        console.log('click ', e);
-        this.setState({
-            current: e.key,
-        });
-    }
-
-    conditionallyRenderModule = () => {
-        switch (this.state.current) {
-            case "1":
-                return <InformationRetrievalModule />;
-            case "2":
-                return <LLMModule />;
-            case "3":
-                return <TranslationModule />;
-            default:
-                return <InformationRetrievalModule />;
-        }
-    }
 
     alertNotRealized = () => {
-        alert("Paper");
+        alert("Ops...Coming soon!");
     }
 
     render() {
@@ -94,9 +52,9 @@ class GlobalLayout extends React.Component {
             <ConfigProvider theme={{token: {...defaultData}}}>
                 <Layout>
                     <Header style={defaultHeaderFooterStyle}>
-                        <Title level={2} style={{color: "#ffffff"}}>iTutor</Title>
-                        <Title level={4} style={{color: "#ffffff"}}>A Generative Tutorial System for Teaching the Elders to Use Smartphone Applications</Title>
-                        <p>TJHCI-X</p>
+                        <Title level={1} style={{ color: "#ffffff" }}><i><b>iTutor</b></i></Title>
+                        <Title level={3} style={{color: "#ffffff"}}>A Generative Tutorial System for Teaching the Elders to Use Smartphone Applications</Title>
+                        <Title level={5} style={{ color: "#ffffff" }}>TJHCI-X</Title>
                         <Button type='primary' href='https://github.com/Motion115/iTutor/' target="_blank" rel="noopener noreferrer"><GithubOutlined />Github</Button> &nbsp;&nbsp;
                         <Button type='primary' onClick={this.alertNotRealized}><FilePdfOutlined />Paper</Button>
                         <br />
@@ -105,26 +63,13 @@ class GlobalLayout extends React.Component {
                     <Content style={defaultContentStyle}>
                         <Introduction />
 
-                    
-                        <Title level={3} style={{ textAlign: 'center', justifyContent: 'center' }}>
-                            <b>Demonstration</b>
-                        </Title>
+                        <Demonstration />
 
-                        <Title level={3} style={{ textAlign: 'center', justifyContent: 'center' }}>
-                            <b>Explaination</b>
-                        </Title>
-                        <Menu
-                            onClick={this.switchModule}
-                            selectedKeys={[this.state.current]}
-                            mode="horizontal"
-                            items={MODULE_SELECTOR}
-                            style={{ alignItems: "center", textAlign: 'center', justifyContent: 'center', width: "60%", margin: "0 auto" }}
-                        />
-                        {this.conditionallyRenderModule()}
+                        <Explanation />   
 
-                        <Title level={3} style={{ textAlign: 'center', justifyContent: 'center' }}>
-                            <b>Video</b>
-                        </Title>
+                        <ConceptVideo />                     
+
+                        
                     </Content>
 
                     <Footer style={defaultHeaderFooterStyle}>

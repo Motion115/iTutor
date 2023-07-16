@@ -5,12 +5,7 @@ import { Layout, Image } from 'antd'
 const { Title, Paragraph, Text, Link } = Typography;
 const { Header, Footer, Sider, Content } = Layout;
 
-// 
-
 export default class InformationRetrievalModule extends React.Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         return (
