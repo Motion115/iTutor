@@ -60,6 +60,8 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+To publish the project on github pages, check out this document [Publish React App](https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/).
+
 ### Available Scripts
 
 In the project directory, you can run:
