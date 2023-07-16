@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iTutor/static/css/main.e6c13ad2.css",
+    "main.js": "/iTutor/static/js/main.07d50624.js",
+    "index.html": "/iTutor/index.html",
+    "main.e6c13ad2.css.map": "/iTutor/static/css/main.e6c13ad2.css.map",
+    "main.07d50624.js.map": "/iTutor/static/js/main.07d50624.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.07d50624.js"
+  ]
+}
