@@ -2,7 +2,6 @@ import React from 'react';
 import { Breadcrumb, Layout, Menu, theme, ConfigProvider } from 'antd';
 import { Row, Col } from 'antd';
 import { Button } from 'antd';
-import buttonStyle from './stylesheet.js';
 import { GithubOutlined, FilePdfOutlined } from '@ant-design/icons';
 import { Divider, Typography } from 'antd';
 import Introduction from './modules/introduction.js'
@@ -16,7 +15,7 @@ const { Header, Footer, Sider, Content } = Layout;
 
 
 const defaultData = {
-    borderRadius: 6,
+    borderRadius: "8px",
     colorPrimary: '#DD78FF',
 };
 
@@ -41,8 +40,6 @@ const defaultHeaderFooterStyle = {
 }
 
 class GlobalLayout extends React.Component {
-
-
     alertNotRealized = () => {
         alert("Ops...Coming soon!");
     }
@@ -56,7 +53,7 @@ class GlobalLayout extends React.Component {
                         <Title level={3} style={{color: "#ffffff"}}>A Generative Tutorial System for Teaching the Elders to Use Smartphone Applications</Title>
                         <Title level={5} style={{ color: "#ffffff" }}>TJHCI-X</Title>
                         <Button type='primary' href='https://github.com/Motion115/iTutor/' target="_blank" rel="noopener noreferrer"><GithubOutlined />Github</Button> &nbsp;&nbsp;
-                        <Button type='primary' onClick={this.alertNotRealized}><FilePdfOutlined />Paper</Button>
+                        <Button type='primary' onClick={() => this.alertNotRealized()}><FilePdfOutlined />Paper</Button>
                         <br />
                     </Header>
 
@@ -67,9 +64,8 @@ class GlobalLayout extends React.Component {
 
                         <Explanation />   
 
-                        <ConceptVideo />                     
-
-                        
+                        <ConceptVideo />     
+                          
                     </Content>
 
                     <Footer style={defaultHeaderFooterStyle}>
