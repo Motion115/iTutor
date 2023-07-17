@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/iTutor/static/css/main.e6c13ad2.css",
-    "main.js": "/iTutor/static/js/main.07d50624.js",
+    "main.js": "/iTutor/static/js/main.33259c2d.js",
+    "static/media/teaser-v3.jpg": "/iTutor/static/media/teaser-v3.501d3775485742b93da7.jpg",
     "index.html": "/iTutor/index.html",
     "main.e6c13ad2.css.map": "/iTutor/static/css/main.e6c13ad2.css.map",
-    "main.07d50624.js.map": "/iTutor/static/js/main.07d50624.js.map"
+    "main.33259c2d.js.map": "/iTutor/static/js/main.33259c2d.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.07d50624.js"
+    "static/js/main.33259c2d.js"
   ]
 }
