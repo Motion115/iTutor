@@ -1,0 +1,18 @@
+{
+    "Command": "I'd like to order a Double Cheese burger from McDonald's for dinner.",
+    "Operation": [
+        "Select 'Dinner' from the selector",
+        "Select 'Double Cheese burger' from the container"
+    ],
+    "Key": [
+        [
+            "Selector",
+            "Dinner"
+        ],
+        [
+            "Container",
+            "Double Cheese burger"
+        ]
+    ],
+    "Explanation": "To order a Double Cheese burger from McDonald's for dinner, select 'Dinner' from the selector and then select 'Double Cheese burger' from the container."
+}

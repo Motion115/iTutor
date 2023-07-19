@@ -1,0 +1,12 @@
+{
+    "Command": "Share my homepage to my good friends.",
+    "Operation": [
+        "Click on the 'Menu' icon.",
+        "Select 'Profile' from the menu."
+    ],
+    "Key": [
+        "Icon",
+        "Menu"
+    ],
+    "Explanation": "To share your homepage, click on the 'Menu' icon, then select 'Profile' from the menu. This will allow you to access your profile where you can find options to share your homepage with your good friends."
+}
