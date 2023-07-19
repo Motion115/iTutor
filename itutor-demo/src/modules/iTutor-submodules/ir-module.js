@@ -67,7 +67,6 @@ export default class InformationRetrievalModule extends React.Component {
                 </Content>
 
             </div>
-
         );
     }
 }
