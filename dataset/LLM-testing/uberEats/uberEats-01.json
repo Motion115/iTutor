@@ -1,0 +1,13 @@
+{
+    "Command": "I'd like to order a McDonald's for lunch.",
+    "Operation": [
+    "Click on the 'Selector' for Fast Food",
+    "Select 'McDonald's' from the options"
+    ],
+    "Key": [
+    "Selector",
+    "Fast Food"
+    ],
+    "Explanation": "To order McDonald's for lunch, click on the 'Selector' for Fast Food and select 'McDonald's' from the available options."
+    }
+    
