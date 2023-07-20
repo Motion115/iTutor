@@ -24,7 +24,7 @@ const MODULE_SELECTOR = [
     {
         key: "3",
         icon: <TranslationOutlined />,
-        label: "Instruction to Interface Translation",
+        label: "Tutorial Interface Generation",
     }
 ]
 
