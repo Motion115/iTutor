@@ -24,9 +24,6 @@ export default class ConceptVideo extends React.Component {
                             sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts">
                         </iframe>
                     </Row>
-
-
-
                 </Content>
             </div>
         );
