@@ -2,12 +2,10 @@ import React from 'react';
 import { Typography } from 'antd';
 import { Layout, Row } from 'antd'
 
-
 const { Title, Paragraph, Text, Link } = Typography;
 const { Header, Footer, Sider, Content } = Layout;
 
 export default class ConceptVideo extends React.Component {
-
     render() {
         return (
             <div>
