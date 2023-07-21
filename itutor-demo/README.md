@@ -52,7 +52,8 @@ When creating folders, you should keep this principal in mind:
 
 In each module folder, if data and other content should be present, put these in a folder named `helper`. In helper, you can put data (i.e. json files) or .js helper functions.
 
-
+## For those unfamiliar with Git
+[A Chinese Tutorial for branching & developing](https://blog.csdn.net/weixin_43367262/article/details/100575221)
 
 ## About Create React App
 

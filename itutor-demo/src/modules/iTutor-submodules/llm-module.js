@@ -6,43 +6,86 @@ const { Title, Paragraph, Text, Link } = Typography;
 const { Header, Footer, Sider, Content } = Layout;
 
 export default class InformationRetrievalModule extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const content = {
+      english: {
+        description_title: "Prompt for chatGPT",
+        description: (
+          <div>
+            Our prompt consists of three parts:
+            <li>
+              we inform chatGPT to provide instructions for navigating through a
+              given application
+            </li>
+            <li>
+              we provide chatGPT with the three types of UI context with
+              specific markings (!, $, and ```)
+            </li>
+            <li>
+              we request chatGPT to respond in JSON including the original
+              command, next-step instruction, UI element to operate on, and the
+              explanation.
+            </li>
+            <br />
+            <b>20 UI types:</b> bare, dialer, camera, chat, editor, form,
+            gallery, list, login, maps, mediaplayer, menu, modal, news, other,
+            profile, search, settings, terms, and tutorial.
+            <br />
+            <br />
+            <b>UI component types:</b> Button, Input, Icon, Checkbox, Selector,
+            Switch, Container, Tag, Menu. Refer to our github repository for
+            detailed labling instructions.
+            <br />
+            <br />
+            Copy the prompt on the right for chatGPT's user interface or use the
+            API to get the response. Be sure to replace the contents inside the
+            bracket.
+          </div>
+        ),
+      },
+      chinese: {
+        description_title: "chatGPT的提示工程",
+        description: (
+          <div>
+            我们针对chatGPT的提示词包含三个部分（目前提示仍为英文，已经在针对其它中文模型进行测试，包括文心一言和ChatGLM，但目前的问题是两个模型接受token长度受到限制）：
+            <li>
+              首先，向chatGPT说明任务是针对一个UI界面给出如何操作页面的提示；
+            </li>
+            <li>
+              接着，将UI语义包装在特定提示词中 (!, $, 和
+              ```)，告诉chatCPT本页面的UI语义；
+            </li>
+            <li>
+              最后，我们要求chatGPT用JSON格式进行回复。回复内容包括当前指令，下一步指令，操作的UI元素，以及操作的解释。
+            </li>
+            <br />
+            <b>20种UI类别:</b> bare, dialer, camera, chat, editor, form,
+            gallery, list, login, maps, mediaplayer, menu, modal, news, other,
+            profile, search, settings, terms, and tutorial.
+            <br />
+            <br />
+            <b>UI组件类别:</b> Button, Input, Icon, Checkbox, Selector, Switch,
+            Container, Tag, Menu. Refer to our github repository for detailed
+            labling instructions.
+            <br />
+            <br />
+            将右侧的提示词复制到chatGPT的用户界面，或者使用API获取回复。请替换提示符括号中的内容后使用。
+          </div>
+        ),
+      },
+    };
+
     return (
       <div>
         <Content style={{ padding: "10px 10px 10px 10px" }}>
           <ContentBlock
-            title="Prompt for chatGPT"
+            title={content[this.props.language]["description_title"]}
             description={
-              <div>
-                Our prompt consists of three parts:
-                <li>
-                  we inform chatGPT to provide instructions for navigating
-                  through a given application
-                </li>
-                <li>
-                  we provide chatGPT with the three types of UI context with
-                  specific markings (!, $, and ```)
-                </li>
-                <li>
-                  we request chatGPT to respond in JSON including the original
-                  command, next-step instruction, UI element to operate on, and
-                  the explanation.
-                </li>
-                <br />
-                <b>20 UI types:</b> bare, dialer, camera, chat, editor, form,
-                gallery, list, login, maps, mediaplayer, menu, modal, news,
-                other, profile, search, settings, terms, and tutorial.
-                <br />
-                <br />
-                <b>UI component types:</b> Button, Input, Icon, Checkbox,
-                Selector, Switch, Container, Tag, Menu. Refer to our github
-                repository for detailed labling instructions.
-                <br />
-                <br />
-                Copy the prompt on the right for chatGPT's user interface or use
-                the API to get the response. Be sure to replace the contents
-                inside the bracket.
-              </div>
+              content[this.props.language]["description"]
             }
             media={
               <Paragraph>

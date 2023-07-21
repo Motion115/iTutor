@@ -13,25 +13,6 @@ import TranslationModule from "./iTutor-submodules/translation-module.js";
 const { Title, Paragraph, Text, Link } = Typography;
 const { Header, Footer, Sider, Content } = Layout;
 
-const MODULE_SELECTOR = [
-  {
-    key: "1",
-    icon: <ScanOutlined />,
-    label: "Metadata Retrieval",
-    //children: [],
-  },
-  {
-    key: "2",
-    icon: <DeliveredProcedureOutlined />,
-    label: "Instruction Generation by LLMs",
-  },
-  {
-    key: "3",
-    icon: <TranslationOutlined />,
-    label: "Tutorial Interface Generation",
-  },
-];
-
 export default class Explaination extends React.Component {
   constructor(props) {
     super(props);
@@ -50,17 +31,49 @@ export default class Explaination extends React.Component {
   conditionallyRenderModule = () => {
     switch (this.state.current) {
       case "1":
-        return <InformationRetrievalModule />;
+        return <InformationRetrievalModule language={this.props.language} />;
       case "2":
-        return <LLMModule />;
+        return <LLMModule language={this.props.language} />;
       case "3":
-        return <TranslationModule />;
+        return <TranslationModule language={this.props.language} />;
       default:
         return <InformationRetrievalModule />;
     }
   };
 
   render() {
+    const SELECTOR_CONTENT = {
+      english: [
+        "Metadata Retrieval",
+        "Instruction Generation by LLMs",
+        "Tutorial Interface Generation",
+      ],
+      chinese: [
+        "UI元数据抽取",
+        "基于LLM的指令生成",
+        "教程界面生成",
+      ],
+    };
+
+    const MODULE_SELECTOR = [
+      {
+        key: "1",
+        icon: <ScanOutlined />,
+        label: SELECTOR_CONTENT[this.props.language][0],
+        //children: [],
+      },
+      {
+        key: "2",
+        icon: <DeliveredProcedureOutlined />,
+        label: SELECTOR_CONTENT[this.props.language][1],
+      },
+      {
+        key: "3",
+        icon: <TranslationOutlined />,
+        label: SELECTOR_CONTENT[this.props.language][2],
+      },
+    ];
+
     return (
       <div>
         <Content style={{ padding: "10px 10px 10px 10px" }}>

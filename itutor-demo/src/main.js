@@ -1,16 +1,15 @@
 import React from "react";
-import { Breadcrumb, Layout, Menu, theme, ConfigProvider } from "antd";
-import { Row, Col } from "antd";
+import { Breadcrumb, Layout, Switch, theme, ConfigProvider } from "antd";
 import { Button } from "antd";
 import { GithubOutlined, FilePdfOutlined } from "@ant-design/icons";
-import { Divider, Typography } from "antd";
+import { Typography } from "antd";
 import Introduction from "./modules/introduction.js";
 import Demonstration from "./modules/demonstration.js";
 import Explanation from "./modules/explanation.js";
 import ConceptVideo from "./modules/concept-video.js";
 
-const { Title, Paragraph, Text, Link } = Typography;
-const { Header, Footer, Sider, Content } = Layout;
+const { Title, Paragraph, Text } = Typography;
+const { Header, Footer, Content } = Layout;
 
 const defaultData = {
   borderRadius: "8px",
@@ -38,8 +37,25 @@ const defaultHeaderFooterStyle = {
 };
 
 class GlobalLayout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      language: "english",
+    };
+  }
+
   alertNotRealized = () => {
     alert("Ops...Coming soon!");
+  };
+
+  setLanguage = () => {
+    let target_language = 'english'
+    if (this.state.language === 'english') {
+      target_language = 'chinese'
+    }
+    this.setState({
+      language: target_language,
+    });
   };
 
   render() {
@@ -59,6 +75,14 @@ class GlobalLayout extends React.Component {
             <Title level={5} style={{ color: "#ffffff" }}>
               TJHCI-X
             </Title>
+            <Paragraph>
+              <Switch
+                checkedChildren="English"
+                unCheckedChildren="中文"
+                defaultChecked
+                onChange={() => this.setLanguage()}
+              />
+            </Paragraph>
             <Button
               type="primary"
               href="https://github.com/Motion115/iTutor/"
@@ -77,13 +101,13 @@ class GlobalLayout extends React.Component {
           </Header>
 
           <Content style={defaultContentStyle}>
-            <Introduction />
+            <Introduction language={this.state.language} />
 
-            <Demonstration />
+            <Demonstration language={this.state.language} />
 
-            <Explanation />
+            <Explanation language={this.state.language} />
 
-            <ConceptVideo />
+            <ConceptVideo/>
           </Content>
 
           <Footer style={defaultHeaderFooterStyle}>
