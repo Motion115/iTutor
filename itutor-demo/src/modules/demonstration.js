@@ -28,12 +28,25 @@ const progressBarContent = [
   },
 ];
 
+const dataset = {
+    "tiktok-1": {
+      source: "xxx.png",
+      command: [
+        {
+          command_text: "xxxx",
+          return_text: "xxxx",
+        },
+      ],
+    },
+};
+
 export default class Demonstration extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
       current_progress: 0,
+      img_id: "",
     };
   }
 
@@ -51,6 +64,26 @@ export default class Demonstration extends React.Component {
     }
   };
 
+  selectImage = () => {
+    let img_id = "123"
+    this.setState({ img_id: img_id });
+    console.log("img_id: ", img_id);
+  }
+
+  conditionalRender = () => {
+    switch (this.state.current_progress) {
+      case 0:
+        return <div><Button onClick={() => this.selectImage()}>Test
+          </Button></div>;
+      case 2:
+        return <div>2</div>;
+      case 3:
+        return <div>3</div>;
+      default:
+        return <div>default</div>;
+    }
+  };
+
   render() {
     return (
       <div>
@@ -62,6 +95,10 @@ export default class Demonstration extends React.Component {
             <b>Demonstration</b>
           </Title>
 
+          <Paragraph>
+            {dataset["tiktok-1"].source}
+          </Paragraph>
+
           <Paragraph style={{ fontSize: "16px" }}>
             Try out the iTutor pipeline demonstration by following the
             processing steps below.
@@ -71,6 +108,8 @@ export default class Demonstration extends React.Component {
             current={this.state.current_progress}
             items={progressBarContent}
           />
+
+          {this.conditionalRender()}
 
           <Row>
             <p>
