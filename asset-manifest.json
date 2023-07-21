@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/iTutor/static/css/main.e6c13ad2.css",
-    "main.js": "/iTutor/static/js/main.9b051ea6.js",
+    "main.js": "/iTutor/static/js/main.8c474fb9.js",
     "static/media/teaser-v3.jpg": "/iTutor/static/media/teaser-v3.501d3775485742b93da7.jpg",
     "static/media/ui-component-classification.png": "/iTutor/static/media/ui-component-classification.193b517888e30d74b764.png",
     "static/media/ui2vec.png": "/iTutor/static/media/ui2vec.5bd416c5200df3f85d9c.png",
     "index.html": "/iTutor/index.html",
     "main.e6c13ad2.css.map": "/iTutor/static/css/main.e6c13ad2.css.map",
-    "main.9b051ea6.js.map": "/iTutor/static/js/main.9b051ea6.js.map"
+    "main.8c474fb9.js.map": "/iTutor/static/js/main.8c474fb9.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.9b051ea6.js"
+    "static/js/main.8c474fb9.js"
   ]
 }
