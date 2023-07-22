@@ -3,7 +3,7 @@ import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
 import { Typography, Steps, Button } from "antd";
 import { Layout, Row } from "antd";
 const { Title, Paragraph, Text, Link } = Typography;
-const { Header, Footer, Sider, Content } = Layout;
+const { Content } = Layout;
 
 const progressBarContent = [
   {

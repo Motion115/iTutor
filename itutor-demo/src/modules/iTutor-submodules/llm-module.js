@@ -1,15 +1,10 @@
 import React from "react";
-import { Typography, Image, Layout, Row, Col } from "antd";
+import { Typography, Layout } from "antd";
 import ContentBlock from "./helper";
-import { AndroidFilled, AppleFilled } from "@ant-design/icons";
-const { Title, Paragraph, Text, Link } = Typography;
-const { Header, Footer, Sider, Content } = Layout;
+const { Paragraph } = Typography;
+const { Content } = Layout;
 
 export default class InformationRetrievalModule extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const content = {
       english: {
@@ -84,9 +79,7 @@ export default class InformationRetrievalModule extends React.Component {
         <Content style={{ padding: "10px 10px 10px 10px" }}>
           <ContentBlock
             title={content[this.props.language]["description_title"]}
-            description={
-              content[this.props.language]["description"]
-            }
+            description={content[this.props.language]["description"]}
             media={
               <Paragraph>
                 <pre>

@@ -6,10 +6,6 @@ const { Title, Paragraph } = Typography;
 const { Content } = Layout;
 
 export default class InformationRetrievalModule extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const CONTENT = {
       english: (
@@ -52,7 +48,7 @@ export default class InformationRetrievalModule extends React.Component {
               margin: "auto",
             }}
           />
-
+          
           <Paragraph style={{ fontSize: "16px" }}>
             {CONTENT[this.props.language]}
           </Paragraph>

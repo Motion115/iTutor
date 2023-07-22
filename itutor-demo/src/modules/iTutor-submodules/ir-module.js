@@ -1,17 +1,12 @@
 import React from "react";
-import { Typography, Image, Layout, Row, Col } from "antd";
+import { Image, Layout } from "antd";
 import ui2vec_pic from "../../assets/ui2vec.png";
 import uicomponent_pic from "../../assets/ui-component-classification.png";
 import ContentBlock from "./helper";
 import { AndroidFilled, AppleFilled } from "@ant-design/icons";
-const { Title, Paragraph, Text, Link } = Typography;
-const { Header, Footer, Sider, Content } = Layout;
+const { Content } = Layout;
 
 export default class InformationRetrievalModule extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   openLink = (link) => {
     window.open(link, "_blank");
   };
@@ -97,7 +92,7 @@ export default class InformationRetrievalModule extends React.Component {
         "ui-component-classification": "UI 组件分类",
         "voice-recognition": "语音识别",
       },
-    }
+    };
     return (
       <div>
         <Content style={{ padding: "10px 10px 10px 10px" }}>

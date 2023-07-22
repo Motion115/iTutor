@@ -1,12 +1,8 @@
 import React from "react";
 import { Typography, Row, Col } from "antd";
-const { Title, Paragraph, Text, Link } = Typography;
+const { Paragraph } = Typography;
 
 export default class ContentBlock extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div>

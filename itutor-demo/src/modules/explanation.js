@@ -10,8 +10,8 @@ import InformationRetrievalModule from "./iTutor-submodules/ir-module.js";
 import LLMModule from "./iTutor-submodules/llm-module.js";
 import TranslationModule from "./iTutor-submodules/translation-module.js";
 
-const { Title, Paragraph, Text, Link } = Typography;
-const { Header, Footer, Sider, Content } = Layout;
+const { Title } = Typography;
+const { Content } = Layout;
 
 export default class Explaination extends React.Component {
   constructor(props) {
@@ -48,11 +48,7 @@ export default class Explaination extends React.Component {
         "Instruction Generation by LLMs",
         "Tutorial Interface Generation",
       ],
-      chinese: [
-        "UI元数据抽取",
-        "基于LLM的指令生成",
-        "教程界面生成",
-      ],
+      chinese: ["UI元数据抽取", "基于LLM的指令生成", "教程界面生成"],
     };
 
     const MODULE_SELECTOR = [

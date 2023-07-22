@@ -1,5 +1,5 @@
 import React from "react";
-import { Breadcrumb, Layout, Switch, theme, ConfigProvider } from "antd";
+import { Layout, Switch, ConfigProvider } from "antd";
 import { Button } from "antd";
 import { GithubOutlined, FilePdfOutlined } from "@ant-design/icons";
 import { Typography } from "antd";
@@ -8,7 +8,7 @@ import Demonstration from "./modules/demonstration.js";
 import Explanation from "./modules/explanation.js";
 import ConceptVideo from "./modules/concept-video.js";
 
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 const { Header, Footer, Content } = Layout;
 
 const defaultData = {
@@ -49,9 +49,9 @@ class GlobalLayout extends React.Component {
   };
 
   setLanguage = () => {
-    let target_language = 'english'
-    if (this.state.language === 'english') {
-      target_language = 'chinese'
+    let target_language = "english";
+    if (this.state.language === "english") {
+      target_language = "chinese";
     }
     this.setState({
       language: target_language,
@@ -107,7 +107,7 @@ class GlobalLayout extends React.Component {
 
             <Explanation language={this.state.language} />
 
-            <ConceptVideo/>
+            <ConceptVideo />
           </Content>
 
           <Footer style={defaultHeaderFooterStyle}>

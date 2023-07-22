@@ -1,15 +1,10 @@
 import React from "react";
-import { Typography, Image, Layout, Row, Col } from "antd";
+import { Typography } from "antd";
 import ContentBlock from "./helper";
 import { FireTwoTone } from "@ant-design/icons";
-const { Title, Paragraph, Text, Link } = Typography;
-const { Header, Footer, Sider, Content } = Layout;
+const { Paragraph } = Typography;
 
 export default class InformationRetrievalModule extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const content = {
       english: {
