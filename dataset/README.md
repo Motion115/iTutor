@@ -36,7 +36,7 @@ We currently label these UI components: Button, Input, Icon, Checkbox, Selector,
 
 ### Prompt
 
-Please checkout [iTutor Project Page](https://motion115.github.io/iTutor) for details.
+Please check [iTutor Project Page](https://motion115.github.io/iTutor) for details.
 
 ### Experimental Results
 
