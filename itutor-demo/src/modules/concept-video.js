@@ -34,7 +34,7 @@ export default class ConceptVideo extends React.Component {
               src="https://player.bilibili.com/player.html?bvid=BV1sR4y1P7n3&page=1&as_wide=1&high_quality=1&danmaku=0&autoplay=0&t=0"
               allowfullscreen="allowfullscreen"
               width="100%"
-              height="500"
+              height="400px"
               frameborder="0"
               sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"
               title="concept-video"

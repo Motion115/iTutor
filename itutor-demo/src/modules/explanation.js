@@ -22,7 +22,7 @@ export default class Explaination extends React.Component {
   }
 
   switchModule = (e) => {
-    console.log("click ", e);
+    //console.log("click ", e);
     this.setState({
       current: e.key,
     });
@@ -88,7 +88,7 @@ export default class Explaination extends React.Component {
               alignItems: "center",
               textAlign: "center",
               justifyContent: "center",
-              width: "60%",
+              width: "100%",
               margin: "0 auto",
             }}
           />

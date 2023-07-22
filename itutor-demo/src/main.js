@@ -17,7 +17,7 @@ const defaultData = {
 };
 
 const defaultContentStyle = {
-  width: "90%",
+  width: "75%",
   margin: "0 auto",
   minHeight: 280,
   background: "#ffffff",
@@ -25,7 +25,7 @@ const defaultContentStyle = {
 };
 
 const defaultHeaderFooterStyle = {
-  width: "90%",
+  width: "75%",
   margin: "0 auto",
   height: "auto",
   background: "#4C6080",
@@ -59,6 +59,12 @@ class GlobalLayout extends React.Component {
   };
 
   render() {
+    const content = {
+      english:
+        "A Generative Tutorial System for Teaching the Elders to Use Smartphone Applications",
+      chinese: "老年人智能手机使用“引路人”",
+    };
+
     return (
       <ConfigProvider theme={{ token: { ...defaultData } }}>
         <Layout>
@@ -69,16 +75,16 @@ class GlobalLayout extends React.Component {
               </i>
             </Title>
             <Title level={3} style={{ color: "#ffffff" }}>
-              A Generative Tutorial System for Teaching the Elders to Use
-              Smartphone Applications
+              {content[this.state.language]}
+              <br />
             </Title>
             <Title level={5} style={{ color: "#ffffff" }}>
               TJHCI-X
             </Title>
             <Paragraph>
               <Switch
-                checkedChildren="English"
-                unCheckedChildren="中文"
+                checkedChildren="中文"
+                unCheckedChildren="English"
                 defaultChecked
                 onChange={() => this.setLanguage()}
               />
@@ -103,11 +109,11 @@ class GlobalLayout extends React.Component {
           <Content style={defaultContentStyle}>
             <Introduction language={this.state.language} />
 
-            <Demonstration language={this.state.language} />
+            {<Demonstration language={this.state.language} />}
 
             <Explanation language={this.state.language} />
 
-            <ConceptVideo />
+            {<ConceptVideo />}
           </Content>
 
           <Footer style={defaultHeaderFooterStyle}>

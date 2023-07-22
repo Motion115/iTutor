@@ -42,7 +42,7 @@ export default class InformationRetrievalModule extends React.Component {
           <Image
             src={teaser_pic}
             style={{
-              width: "80%",
+              width: "75%",
               height: "auto",
               display: "block",
               margin: "auto",
