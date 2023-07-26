@@ -1,0 +1,20 @@
+{
+    "Icon": [
+    "Circle",
+           "Back"
+    ],
+    " Selector": [
+    "Pickup",
+    "Sort",
+    "Best Overall"
+    ],
+    "Checkbox": [
+          "Picked for you(default) ",
+    "Most popular",
+    "Rating"
+    ],
+    "Button": [
+    "Apply"
+    ]
+}
+    

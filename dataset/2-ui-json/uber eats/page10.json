@@ -1,0 +1,19 @@
+{
+    "Icon": [
+    " Border",
+          "Back"
+    ],
+    " Checkbox": [
+    " Vegetarian",
+    " Vegan",
+    " Halal",
+    " Gluten-free"
+    ],
+    "Tag": [
+          "Reset"
+    ],
+    "Button": [
+    "Apply"
+    ]
+    }
+    

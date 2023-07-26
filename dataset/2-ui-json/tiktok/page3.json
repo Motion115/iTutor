@@ -1,0 +1,22 @@
+{
+    "Selector": [
+    "New followers",
+    "Activities",
+    "System notifications"
+    ],
+    "Button": [
+    "Find",
+    "60s",
+    "15s"
+    ],
+    "Input": [
+    "Search"
+    ],
+    "Menu":[
+    "Home",
+    "Friends",
+    "Inbox",
+             "Profile"
+    ]
+    }
+    
