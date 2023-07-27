@@ -1,0 +1,29 @@
+{
+    "Icon": [
+    "Upload",
+    "Menu",
+    "Retweet",
+    "Lock",
+    "Heart",
+    "Tablet",
+    "Plus",
+           "Footmark"
+    ],
+    "Button": [
+    "Edit profile",
+    "Add friends"
+    ],
+    "Tag":[
+             "Hide",
+             "Following",
+             "Followers",
+             "Likes"
+    ]
+    "Menu": [
+          "Home ",
+    "Friends",
+    "Profile",
+    "Inbox"
+    ]
+    }
+    
