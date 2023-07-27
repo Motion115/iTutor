@@ -53,8 +53,8 @@ Please check [iTutor Project Page](https://motion115.github.io/iTutor) for detai
 
 We provide two source of downloading the dataset:
 
-- Baidu Netdisk (TODO)
-- Google Drive (TODO)
+- Baidu Netdisk ([Link](https://pan.baidu.com/s/1useGb4qtq4YbG-DFCj4XZg?pwd=rdqv))
+- Google Drive ([Link](https://drive.google.com/file/d/1rZVgFTfauJiWXy2dMvDvRT1xMDMFt5Jk/view?usp=drive_link))
 
 If you encountered an issue, please create an *Issue* in this repository, and we will check out the problem.
 
