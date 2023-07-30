@@ -1,12 +1,14 @@
 import React from "react";
 import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
-import { Typography, Steps, Button, Radio } from "antd";
-import { Layout, Row, Col, Select, Image } from "antd";
+import { Typography, Steps, Button, Radio, Space } from "antd";
+import { Layout, Row, Col, Select, Image, Card } from "antd";
+// Import all the images here
 import ImageReader from "./demonstration-submodules/image-reader";
-import tiktok_01_pic from "../assets/tiktok-01~05.jpg";
-import tiktok_02_pic from "../assets/tiktok-06.jpg";
-import tiktok_03_pic from "../assets/tiktok-07~09.jpg";
-import { Card } from "antd";
+// Import all the prompt here
+import JsonReader from "./demonstration-submodules/json-reader";
+// Import all the response here
+import MarkdownReader from "./demonstration-submodules/prompt-reader";
+
 const { Title, Paragraph, Text, Link } = Typography;
 const { Content } = Layout;
 
@@ -52,9 +54,8 @@ export default class Demonstration extends React.Component {
 
     this.state = {
       current_progress: 0,
-      step_1: 1,
       img_id: "TikTok-01",
-      command_state: optionMap["TikTok-01"][0],
+      command_state: Object.keys(optionMap["TikTok-01"])[0],
     };
   }
 
@@ -73,53 +74,53 @@ export default class Demonstration extends React.Component {
   };
 
   handleImageChoiceChange = (value) => {
-    this.setState({ 
+    this.setState({
       img_id: value,
-      command_state: optionMap[value][0]
+      command_state: Object.keys(optionMap[value])[0],
     });
-  };
-
-  conditionalGetPicture = () => {
-    switch (this.state.img_id) {
-      case "TikTok-01":
-        return <Image src={tiktok_01_pic} style={picStyle} />;
-      case "TikTok-02":
-        return <Image src={tiktok_02_pic} style={picStyle} />;
-      case "TikTok-03":
-        return <Image src={tiktok_03_pic} style={picStyle} />;
-      default:
-        return <div>please go back and select an UI image</div>;
-    }
+    //console.log(Object.keys(optionMap[value])[0]);
   };
 
   onCommandChange = (e) => {
     this.setState({
       command_state: e.target.value,
     });
-    console.log(e.target.value);
+    //console.log(e.target.value);
   };
 
   conditionalGetCommand = () => {
-    console.log(this.state.command_state)
+    //console.log(this.state.command_state)
     return (
       <div>
         <Radio.Group
-          options={Object.keys(optionMap[this.state.img_id])}
+          value={this.state.command_state}
           onChange={this.onCommandChange}
-          defaultValue={Object.keys(optionMap[this.state.img_id])[0]}
-        />
+        >
+          <Space direction="vertical">
+            {Object.keys(optionMap[this.state.img_id]).map((key) => (
+              <Radio value={key}>{key}</Radio>
+            ))}
+          </Space>
+        </Radio.Group>
       </div>
     );
   };
 
   conditionalRender = () => {
+    let display_id = optionMap[this.state.img_id][this.state.command_state];
     switch (this.state.current_progress) {
       case 0:
+        let image_referer = this.state.img_id;
         return (
           <div>
             <Row>
-              <Col span={12}>{this.conditionalGetPicture()}</Col>
               <Col span={12}>
+                <ImageReader image_referer={image_referer} />
+              </Col>
+              <Col span={12}>
+                <Paragraph style={{ fontSize: "16px" }}>
+                  <b>Please select an UI image with a paired command.</b>
+                </Paragraph>
                 <Select
                   defaultValue={this.state.img_id}
                   style={{
@@ -131,63 +132,34 @@ export default class Demonstration extends React.Component {
                     label: key,
                   }))}
                 />
+                <br />
+                <br />
                 {this.conditionalGetCommand()}
               </Col>
             </Row>
           </div>
         );
+      case 1:
+        return (
+          <div>
+            <Paragraph>
+              <MarkdownReader display_id={display_id} />
+            </Paragraph>
+          </div>
+        );
       case 2:
-        switch (this.state.img_id) {
-          case 211:
-            return (
-              <div>
-                <Card title="Prompt Generation" bordered={false}>
-                  <p>
-                    "Your task is to act like a tutor, where you need to
-                    instruct a user how to operate a given application and
-                    explain what this operation does. The explanation should be
-                    around 50 words, and no longer than 100 words.
-                  </p>
-
-                  <p>
-                    You will be provided with the following metadata for making
-                    your decision: 1. The general purpose of the page is
-                    provided in between two exclamation marks. the purpose is
-                    one of the following 20 classes: bare, dialer, camera, chat,
-                    editor, form, gallery, list, login, maps, mediaplayer, menu,
-                    modal, news, other, profile, search, settings, terms, and
-                    tutorial. 2. The UI components of the page are provided in
-                    JSON format and rounded by the dollar sign. All the possible
-                    types of UI components are Button, Input, Icon, Checkbox,
-                    Selector, Switch, Container, Tag, Menu. Each of the types is
-                    a possible attribute in the JSON. 3. The command from the
-                    user will be provided in triple backticks.
-                  </p>
-
-                  <p>
-                    You should reply with JSON source code. You should provide 4
-                    attributes: 1. "Command": repeat the command of the user. 2.
-                    "Operation": a list, including the first next two steps of
-                    operation. 3. "Key": a list. Index 0 is the attribute in the
-                    UI component JSON, and index 1 should the annotation of the
-                    element. 4. "Explanation": the explanation of the proposed
-                    operation.
-                  </p>
-
-                  <p>
-                    The metadata is as follows: !other! $ "Icon": [ "Upload",
-                    "Menu", "Retweet", "Lock", "Heart", "Tablet", "Plus",
-                    "Footmark" ], "Button": [ "Edit profile", "Add friends" ],
-                    "Tag":[ "Hide", "Following", "Followers", "Likes" ] "Menu":
-                    [ "Home ", "Friends", "Profile", "Inbox" ] $ ``` I want to
-                    add my neighbor as my friend on Tiktok.```
-                  </p>
-                </Card>
-              </div>
-            );
-          default:
-            return <div>111</div>;
-        }
+        return (
+          <div>
+            <Row gutter={[16, 16]}>
+              <Col span={12}>
+                <JsonReader display_id={display_id} />
+              </Col>
+              <Col span={12}>
+                这里面是对应的图片，使用image-reader模块
+              </Col>
+            </Row>
+          </div>
+        );
       default:
         return <div>cll</div>;
     }
@@ -233,9 +205,9 @@ export default class Demonstration extends React.Component {
               <RightCircleOutlined />
             </Button>
           </Row>
-          
+
           <br />
-          
+
           {this.conditionalRender()}
         </Content>
       </div>

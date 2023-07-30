@@ -1,0 +1,12 @@
+{
+    "Command": "I want to change my nickname.",
+    "Operation": [
+        "Click on 'Profile'",
+        "Click on 'Edit profile'"
+    ],
+    "Key": [
+        "Button",
+        "Edit profile"
+    ],
+    "Explanation": "To change your nickname, go to your profile and click on 'Edit profile'. Look for the field where you can update your nickname and save the changes."
+}
