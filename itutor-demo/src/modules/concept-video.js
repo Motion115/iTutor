@@ -17,9 +17,8 @@ export default class ConceptVideo extends React.Component {
             <b>Concept Video</b>
           </Title>
 
-          <Paragraph>
-            !This is a temporary video to test the build of the website. We will
-            update the video as soon as possible!
+          <Paragraph style={{fontSize: "8px", textAlign: "center"}}>
+            Currently available in Chinese version.
           </Paragraph>
 
           <Row
@@ -31,7 +30,7 @@ export default class ConceptVideo extends React.Component {
             }}
           >
             <iframe
-              src="https://player.bilibili.com/player.html?bvid=BV1sR4y1P7n3&page=1&as_wide=1&high_quality=1&danmaku=0&autoplay=0&t=0"
+              src="https://player.bilibili.com/player.html?bvid=BV17z4y147Gf&page=1&as_wide=1&high_quality=1&danmaku=0&autoplay=0&t=0"
               allowfullscreen="allowfullscreen"
               width="100%"
               height="400px"

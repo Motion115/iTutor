@@ -109,11 +109,11 @@ class GlobalLayout extends React.Component {
           <Content style={defaultContentStyle}>
             <Introduction language={this.state.language} />
 
-            {<Demonstration language={this.state.language} />}
+            <Demonstration language={this.state.language} />
 
             <Explanation language={this.state.language} />
 
-            {<ConceptVideo />}
+            <ConceptVideo />
           </Content>
 
           <Footer style={defaultHeaderFooterStyle}>
