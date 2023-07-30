@@ -39,12 +39,33 @@ const optionMap = {
     "I want to look at the videos I've liked.": "TikTok-01-02",
   },
   "TikTok-02": {
-    "I want to Tiktok.": "TikTok-02-01",
-    "I want to I've liked.": "TikTok-02-02",
+    "I want to make videos.": "TikTok-02-01",
   },
   "TikTok-03": {
-    "add my neighbor as my friend on Tiktok.": "TikTok-03-01",
-    "at the videos I've liked.": "TikTok-03-02",
+    "I wonder if I have any new fans?": "TikTok-03-01",
+    "Check my new messages.": "TikTok-03-02",
+  },
+  "UberEats-01":{
+    "I don't want Onions on my hamburger.":"UberEats-01-01",
+  },
+  "UberEats-02":{
+    "I want my food delivered as quickly as possible.":"UberEats-02-01",
+  },
+  "UberEats-03":{
+    "I'd like to see what I ordered and check out.":"UberEats-03-01",
+  },
+  "YahooNews-01":{
+    "I'd like to see the latest news from the United States.":"yahoonews-01-01",
+    "The interface is too bright, dim it a bit.":"yahoonews-01-02",
+    "Login to my account.":"yahoonews-01-03",
+    "What are some recent videos that people have been following.":"yahoonews-01-04",
+  },
+  "YahooNews-02":{
+    "What are some recent videos that people have been following?":"yahoonews-02-01",
+  },
+  "YahooNews-03":{
+    "Click on 'Display Settings.":"yahoonews-03-01",
+    "I'd like to make some suggestions for this software.":"yahoonews-03-02",
   },
 };
 
