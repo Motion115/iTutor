@@ -1,0 +1,9 @@
+{
+  "Command": "I'd like to make some suggestions for this software.",
+  "Operation": [
+    "Click on 'Send Feedback'",
+    "Write down your suggestions and submit."
+  ],
+  "Key": ["Selector", "Send Feedback"],
+  "Explanation": "To provide suggestions, click on 'Send Feedback', then write down your feedback or suggestions in the provided form and submit it."
+}

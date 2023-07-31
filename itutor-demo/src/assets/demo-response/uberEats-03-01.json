@@ -1,0 +1,6 @@
+{
+  "Command": "I'd like to see what I ordered and check out.",
+  "Operation": ["Click on 'View cart' button.", "Proceed to checkout."],
+  "Key": ["Button", "View cart"],
+  "Explanation": "Clicking on the 'View cart' button will allow you to see the items you have ordered. After reviewing your order, proceed to the checkout process to complete your purchase."
+}

@@ -13,28 +13,28 @@ You should reply with JSON source code. You should provide 4 attributes:
 
 The metadata is as follows:
 
-!maps!
+!other!
 
 ```json
 ${
-    "Icon": [
-        "back",
-        "localizer"
-    ],
-    "Button": [
-        "G312 and Lvyuan Road Intersection",
-        "Pick up at G312 and Lvyuan Road Inter..."
-    ],
-    "Input": [
-        "Enter your destination"
-    ],
-    "Tag": [
-        "Airport",
-        "Schedule",
-        "For others",
-        "6-seater"
-    ]
-}$
+"Icon": [
+      "Close",
+"Search"
+],
+"Selector": [
+"Picked for you",
+"SEASONAL SPECIALS"
+],
+"Container": [
+"Melty Mac",
+"Patty Melt",
+"Swiss & Shroom MeltBurger"
+],
+"Button": [
+"View cart "
+]
+}
+$
 ```
 
-``` I want to go to Hongqiao Railway Station by taxi.```
+```I'd like to see what I ordered and check out.```

@@ -1,0 +1,6 @@
+{
+  "Command": "What are some recent videos that people have been following?",
+  "Operation": ["Click on 'Top Stories'", "Click on 'Video'"],
+  "Key": ["Tag", "Top videos"],
+  "Explanation": "To find recent videos, click on 'Top Stories' and then select 'Video' from the menu options."
+}

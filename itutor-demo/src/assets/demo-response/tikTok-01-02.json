@@ -1,0 +1,9 @@
+{
+  "Command": "I want to look at the videos I've liked.",
+  "Operation": [
+    "Click on 'Profile' in the Menu.",
+    "Find and click on 'Likes' under the 'Tags' section."
+  ],
+  "Key": ["Menu", "Profile and Likes"],
+  "Explanation": "To view your liked videos, first, access the 'Menu' by clicking on the menu icon. Then, click on 'Profile' from the available options. Finally, scroll down to the 'Tags' section and click on 'Likes' to see the videos you've liked."
+}

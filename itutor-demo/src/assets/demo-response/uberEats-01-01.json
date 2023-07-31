@@ -1,0 +1,16 @@
+{
+  "Command": "I don't want Onions on my hamburger.",
+  "Operation": [
+    "Click on the Checkbox for 'NO Crispy Onions'.",
+    "Click on the Button 'Add 1 to cart.'"
+  ],
+  "Key": [
+    {
+      "Checkbox": "NO Crispy Onions"
+    },
+    {
+      "Button": "Add 1 to cart."
+    }
+  ],
+  "Explanation": "To remove onions from your hamburger, click on the Checkbox next to 'NO Crispy Onions'. Then, click on the Button 'Add 1 to cart.' This will update your order by removing onions and add the modified item to your cart."
+}

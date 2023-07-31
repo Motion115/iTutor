@@ -1,0 +1,9 @@
+{
+  "Command": "I want my food delivered as quickly as possible.",
+  "Operation": [
+    "Click on the Selector element with the annotation 'Delivery'.",
+    "Click on the Button element with the annotation 'Priority'."
+  ],
+  "Key": ["Selector", "Delivery"],
+  "Explanation": "To prioritize quick delivery, select 'Delivery' from the options in the Selector. Then, click the 'Priority' button to indicate your preference for fast delivery."
+}

@@ -1,0 +1,9 @@
+{
+  "Command": "Login to my account.",
+  "Operation": [
+    "Click the 'Login' button.",
+    "Fill in your credentials and press 'Enter'."
+  ],
+  "Key": ["Button", "Login"],
+  "Explanation": "To log in, click on the 'Login' button, then enter your username and password in the provided fields and finally press the 'Enter' key or click the 'Login' button again."
+}

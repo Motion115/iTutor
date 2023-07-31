@@ -55,17 +55,17 @@ const optionMap = {
     "I'd like to see what I ordered and check out.":"UberEats-03-01",
   },
   "YahooNews-01":{
-    "I'd like to see the latest news from the United States.":"yahoonews-01-01",
-    "The interface is too bright, dim it a bit.":"yahoonews-01-02",
-    "Login to my account.":"yahoonews-01-03",
-    "What are some recent videos that people have been following.":"yahoonews-01-04",
+    "I'd like to see the latest news from the United States.":"YahooNews-01-01",
+    "The interface is too bright, dim it a bit.":"YahooNews-01-02",
+    "Login to my account.":"YahooNews-01-03",
+    "What are some recent videos that people have been following.":"YahooNews-01-04",
   },
   "YahooNews-02":{
-    "What are some recent videos that people have been following?":"yahoonews-02-01",
+    "What are some recent videos that people have been following?":"YahooNews-02-01",
   },
   "YahooNews-03":{
-    "Click on 'Display Settings.":"yahoonews-03-01",
-    "I'd like to make some suggestions for this software.":"yahoonews-03-02",
+    "I don't want to use traffic to watch videos.":"YahooNews-03-01",
+    "I'd like to make some suggestions for this software.":"YahooNews-03-02",
   },
 };
 
@@ -176,7 +176,7 @@ export default class Demonstration extends React.Component {
                 <JsonReader display_id={display_id} />
               </Col>
               <Col span={12}>
-                这里面是对应的图片，使用image-reader模块
+                <ImageReader image_referer={this.state.command_state} />
               </Col>
             </Row>
           </div>

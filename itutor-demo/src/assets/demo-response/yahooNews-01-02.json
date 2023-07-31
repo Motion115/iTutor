@@ -1,0 +1,9 @@
+{
+  "Command": "The interface is too bright, dim it a bit.",
+  "Operation": [
+    "Click the 'Switch to dark mode' button",
+    "Observe the interface dimming"
+  ],
+  "Key": ["Button", "Switch to dark mode"],
+  "Explanation": "To dim the interface, click the 'Switch to dark mode' button, which will change the app's theme to a darker one, making it easier on the eyes in low-light conditions."
+}

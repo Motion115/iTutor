@@ -1,0 +1,6 @@
+{
+  "Command": "I want to add my neighbor as my friend on Tiktok.",
+  "Operation": ["1. Open the app's menu.", "2. Tap on 'Add friends' button."],
+  "Key": ["Button", "Add friends"],
+  "Explanation": "To add your neighbor as your friend on Tiktok, first, open the app's menu by finding the 'Menu' icon (usually looks like three horizontal lines) and tapping on it. Then, locate and tap on the 'Add friends' button to start adding your neighbor as your friend."
+}
