@@ -1,0 +1,9 @@
+{
+  "Command": "I'd like to see the latest news from the United States.",
+  "Operation": [
+    "Click on the 'Top Stories' menu",
+    "Scroll and find the 'U.S' tag"
+  ],
+  "Key": ["Menu", "'Top Stories'", "Tag", "'U.S'"],
+  "Explanation": "To see the latest news from the United States, click on the 'Top Stories' menu in the navigation. Then, scroll through the news items until you find the 'U.S' tag, which indicates news related to the United States."
+}

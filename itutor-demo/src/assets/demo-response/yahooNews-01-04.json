@@ -1,0 +1,6 @@
+{
+  "Command": "What are some recent videos that people have been following.",
+  "Operation": ["Click on 'Menu' button", "Select 'Video' option"],
+  "Key": ["Button", "Menu"],
+  "Explanation": "To find recent videos, click on the 'Menu' button and choose the 'Video' option from the available menu."
+}

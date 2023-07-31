@@ -1,0 +1,6 @@
+{
+  "Command": "Check my new messages.",
+  "Operation": ["Click on 'Inbox' menu", "Look for 'System notifications'"],
+  "Key": ["Menu", "Inbox"],
+  "Explanation": "To check your new messages, click on the 'Inbox' menu. Then, look for 'System notifications' to find the messages from new followers and activities."
+}

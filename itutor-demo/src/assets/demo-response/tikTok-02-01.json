@@ -1,0 +1,9 @@
+{
+  "Command": "I want to make videos.",
+  "Operation": [
+    "Click the 'Upload' button.",
+    "Select 'Photo' from the 'Switch' options."
+  ],
+  "Key": ["Button", "Upload"],
+  "Explanation": "Clicking the 'Upload' button allows you to add media files to the video editor. Then, select 'Photo' from the 'Switch' options to enable the photo mode for creating your video content."
+}

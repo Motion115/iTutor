@@ -13,21 +13,28 @@ You should reply with JSON source code. You should provide 4 attributes:
 
 The metadata is as follows:
 
-!maps!
+!other!
 
 ```json
 ${
-    "Icon": [
-        "back",
-        "localizer"
-    ],
-    "Tag": [
-        "Airport",
-        "Schedule",
-        "For others",
-        "6-seater"
-    ]
-}$
+"Container": [
+"Iowa's 6-week abortion ban will
+'eliminate almost all abortion care' in the state"
+],
+"Button": [
+"Switch to dark mode"
+],
+"Tag": [
+"U.S",
+"Later"
+],
+"Menu":[
+"Top Stories",
+"Video",
+"Account"
+]
+}
+$
 ```
 
-``` I want to go to Hongqiao Railway Station by taxi.```
+```What are some recent videos that people have been following.```

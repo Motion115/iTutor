@@ -1,0 +1,9 @@
+{
+  "Command": "I don't want to use traffic to watch videos.",
+  "Operation": [
+    "Step 1: Click on 'Display Settings'",
+    "Step 2: Perform desired actions in the Display Settings menu"
+  ],
+  "Key": ["Selector", "Display Settings"],
+  "Explanation": "By clicking on 'Display Settings,' you can access and modify various display-related options and configurations."
+}

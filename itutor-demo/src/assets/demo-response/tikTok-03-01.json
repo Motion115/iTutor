@@ -1,0 +1,6 @@
+{
+  "Command": "I wonder if I have any new fans?",
+  "Operation": ["Click on 'New followers'", "Check for notifications"],
+  "Key": ["Button", "New followers"],
+  "Explanation": "Click on the 'New followers' button to check for any new fans or followers. This button will likely show you a list of people who recently started following you or engaging with your profile."
+}
