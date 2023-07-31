@@ -16,11 +16,6 @@ import yahooNews_01_04 from "../../assets/demo-response/yahooNews-01-04.json";
 import yahooNews_02_01 from "../../assets/demo-response/yahooNews-02-01.json";
 import yahooNews_03_01 from "../../assets/demo-response/yahooNews-03-01.json";
 import yahooNews_03_02 from "../../assets/demo-response/yahooNews-03-02.json";
-
-
-
-
-
 //react-json-view: https://www.npmjs.com/package/react-json-view
 
 const displayIdMap = {
