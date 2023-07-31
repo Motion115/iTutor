@@ -1,7 +1,7 @@
 import React from "react";
 import { LeftCircleOutlined, RightCircleOutlined } from "@ant-design/icons";
 import { Typography, Steps, Button, Radio, Space } from "antd";
-import { Layout, Row, Col, Select, Image, Card } from "antd";
+import { Layout, Row, Col, Select } from "antd";
 // Import all the images here
 import ImageReader from "./demonstration-submodules/image-reader";
 // Import all the prompt here
@@ -9,29 +9,23 @@ import JsonReader from "./demonstration-submodules/json-reader";
 // Import all the response here
 import MarkdownReader from "./demonstration-submodules/prompt-reader";
 
-const { Title, Paragraph, Text, Link } = Typography;
+const { Title, Paragraph } = Typography;
 const { Content } = Layout;
 
 const progressBarContent = [
   {
-    title: "Select UI Image and Command",
-    description: "Select an UI page.",
+    title: "Requirement",
+    description: "输入需求",
   },
   {
-    title: "Prompt & Instruction",
-    description: "Prompt the LLM.",
+    title: "Prompt Generation",
+    description: "生成提示词",
   },
   {
-    title: "Instruction Translation",
-    description: "A multimodal tutorial.",
+    title: "Instruction & Tutorial Generation",
+    description: "模型返回与生成教程",
   },
 ];
-
-const picStyle = {
-  width: "40%",
-  display: "block",
-  margin: "auto",
-};
 
 const optionMap = {
   "TikTok-01": {
@@ -45,27 +39,30 @@ const optionMap = {
     "I wonder if I have any new fans?": "TikTok-03-01",
     "Check my new messages.": "TikTok-03-02",
   },
-  "UberEats-01":{
-    "I don't want Onions on my hamburger.":"UberEats-01-01",
+  "UberEats-01": {
+    "I don't want Onions on my hamburger.": "UberEats-01-01",
   },
-  "UberEats-02":{
-    "I want my food delivered as quickly as possible.":"UberEats-02-01",
+  "UberEats-02": {
+    "I want my food delivered as quickly as possible.": "UberEats-02-01",
   },
-  "UberEats-03":{
-    "I'd like to see what I ordered and check out.":"UberEats-03-01",
+  "UberEats-03": {
+    "I'd like to see what I ordered and check out.": "UberEats-03-01",
   },
-  "YahooNews-01":{
-    "I'd like to see the latest news from the United States.":"YahooNews-01-01",
-    "The interface is too bright, dim it a bit.":"YahooNews-01-02",
-    "Login to my account.":"YahooNews-01-03",
-    "What are some recent videos that people have been following.":"YahooNews-01-04",
+  "YahooNews-01": {
+    "I'd like to see the latest news from the United States.":
+      "YahooNews-01-01",
+    "The interface is too bright, dim it a bit.": "YahooNews-01-02",
+    "Login to my account.": "YahooNews-01-03",
+    "What are some recent videos that people have been following.":
+      "YahooNews-01-04",
   },
-  "YahooNews-02":{
-    "What are some recent videos that people have been following?":"YahooNews-02-01",
+  "YahooNews-02": {
+    "What are some recent videos that people have been following?":
+      "YahooNews-02-01",
   },
-  "YahooNews-03":{
-    "I don't want to use traffic to watch videos.":"YahooNews-03-01",
-    "I'd like to make some suggestions for this software.":"YahooNews-03-02",
+  "YahooNews-03": {
+    "I don't want to use traffic to watch videos.": "YahooNews-03-01",
+    "I'd like to make some suggestions for this software.": "YahooNews-03-02",
   },
 };
 
@@ -108,7 +105,7 @@ export default class Demonstration extends React.Component {
     });
     //console.log(e.target.value);
   };
-  
+
   conditionalGetCommand = () => {
     //console.log(this.state.command_state)
     return (
@@ -187,6 +184,11 @@ export default class Demonstration extends React.Component {
   };
 
   render() {
+    const CONTENT = {
+      english: "This is a demonstration of iTutor's dataflow. You can follow the steps to try out this static demo.",
+      chinese: "以下是iTutor系统按数据流的展示。您可以按照步骤条提示尝试此静态演示。",
+    }
+
     return (
       <div>
         <Content style={{ padding: "10px 10px 10px 10px" }}>
@@ -198,8 +200,7 @@ export default class Demonstration extends React.Component {
           </Title>
 
           <Paragraph style={{ fontSize: "16px" }}>
-            Try out the iTutor pipeline demonstration by following the
-            processing steps below.
+            {CONTENT[this.props.language]}
           </Paragraph>
 
           <Steps
