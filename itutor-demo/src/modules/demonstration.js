@@ -108,7 +108,7 @@ export default class Demonstration extends React.Component {
     });
     //console.log(e.target.value);
   };
-
+  
   conditionalGetCommand = () => {
     //console.log(this.state.command_state)
     return (
