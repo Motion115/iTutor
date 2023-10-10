@@ -9,9 +9,13 @@ def del_key_entry(key, dict):
         del dict[key]
 
 class MetadataRetrieval:
-    def __init__(self, src_file):
-        self.src_file = src_file
-        self.raw_data = self.load_json(src_file)
+    def __init__(self, src_file, from_file = True):
+        if from_file == True:
+            self.src_file = src_file
+            self.raw_data = self.load_json(src_file)
+        else:
+            self.src_file = ""
+            self.raw_data = src_file
         self.construct_tree()
     
     def load_json(self, src_file):
@@ -110,6 +114,13 @@ class MetadataRetrieval:
         # to file
         with open("./test.json", "w") as f:
             f.write(out_json)
+    
+    def export_json_string(self):
+        exporter = DictExporter(
+            attriter=self._export_filter)
+        out_json = exporter.export(self.root)
+        out_json = json.dumps(out_json)
+        return out_json
 
 if __name__ == "__main__":
     src_file = "./hierarchies/295.json"
