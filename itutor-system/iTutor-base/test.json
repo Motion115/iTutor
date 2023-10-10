@@ -1,0 +1,270 @@
+{
+  "UI_type": "FullPage",
+  "name": 0,
+  "children": [
+    {
+      "UI_type": "Toolbar",
+      "name": 1,
+      "children": [
+        {
+          "UI_type": "Icon",
+          "alternate_text": "menu",
+          "name": 14
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "Leaderboard",
+          "name": 15
+        }
+      ]
+    },
+    {
+      "UI_type": "Multi-Tab",
+      "name": 2,
+      "children": [
+        {
+          "UI_type": "Text",
+          "semantics": "THIS COURSE",
+          "name": 16
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "TOTAL",
+          "name": 17
+        }
+      ]
+    },
+    {
+      "UI_type": "Text",
+      "semantics": "TOP LEARNERS",
+      "name": 3
+    },
+    {
+      "UI_type": "List Item",
+      "name": 4,
+      "children": [
+        {
+          "UI_type": "Icon",
+          "alternate_text": "avatar",
+          "name": 18
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "1",
+          "name": 19
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "Nikolay Nachev",
+          "name": 20
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "56876 XP",
+          "name": 21
+        }
+      ]
+    },
+    {
+      "UI_type": "List Item",
+      "name": 5,
+      "children": [
+        {
+          "UI_type": "Icon",
+          "alternate_text": "avatar",
+          "name": 22
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "2",
+          "name": 23
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "Dhaval Furia",
+          "name": 24
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "30851 XP",
+          "name": 25
+        }
+      ]
+    },
+    {
+      "UI_type": "List Item",
+      "name": 6,
+      "children": [
+        {
+          "UI_type": "Image",
+          "name": 26
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "3",
+          "name": 27
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "Helen",
+          "name": 28
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "22369 XP",
+          "name": 29
+        }
+      ]
+    },
+    {
+      "UI_type": "List Item",
+      "name": 7,
+      "children": [
+        {
+          "UI_type": "Icon",
+          "alternate_text": "avatar",
+          "name": 30
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "4",
+          "name": 31
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "Celal Aybar",
+          "name": 32
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "30746 XP",
+          "name": 33
+        }
+      ]
+    },
+    {
+      "UI_type": "List Item",
+      "name": 8,
+      "children": [
+        {
+          "UI_type": "Icon",
+          "alternate_text": "avatar",
+          "name": 34
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "5",
+          "name": 35
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "Armen Armenia",
+          "name": 36
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "9683 XP",
+          "name": 37
+        }
+      ]
+    },
+    {
+      "UI_type": "Text",
+      "semantics": "\u2026 YOU ARE NEXT",
+      "name": 9
+    },
+    {
+      "UI_type": "List Item",
+      "name": 10,
+      "children": [
+        {
+          "UI_type": "Icon",
+          "alternate_text": "avatar",
+          "name": 38
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "455395",
+          "name": 39
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "ashwinj",
+          "name": 40
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "5 XP",
+          "name": 41
+        }
+      ]
+    },
+    {
+      "UI_type": "List Item",
+      "name": 11,
+      "children": [
+        {
+          "UI_type": "Icon",
+          "alternate_text": "avatar",
+          "name": 42
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "455396",
+          "name": 43
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "Matt",
+          "name": 44
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "5 XP",
+          "name": 45
+        }
+      ]
+    },
+    {
+      "UI_type": "List Item",
+      "name": 12,
+      "children": [
+        {
+          "UI_type": "Icon",
+          "alternate_text": "avatar",
+          "name": 46
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "455397",
+          "name": 47
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "Francisco Xavier Gayosso",
+          "name": 48
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "5 XP",
+          "name": 49
+        }
+      ]
+    },
+    {
+      "UI_type": "List Item",
+      "name": 13,
+      "children": [
+        {
+          "UI_type": "Image",
+          "name": 50
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "Luenchung Fung",
+          "name": 51
+        }
+      ]
+    }
+  ]
+}
