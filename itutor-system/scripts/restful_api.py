@@ -1,5 +1,6 @@
 from scripts.utils_metadata import MetadataRetrieval
 from scripts.utils_instruction_generation import assemble_instruction_generation_prompt, assemble_screen_question_answering_prompt, assemble_screen_summary_prompt, call_zhipu_api, classify_prompt
+import json
 
 def treeify_enrico_json(json_data):
     metadata = MetadataRetrieval(json_data, from_file=False)
@@ -36,5 +37,15 @@ def casify_and_call_response(json_data):
         # print(llm_suggestion)
         # check the response, remove the code notation for md
         llm_suggestion = llm_suggestion.replace("```", "")
+        # replace if it starts with "json "
+        if llm_suggestion.startswith("json "):
+            llm_suggestion = llm_suggestion.replace("json ", "")
+        # replace 
+        # check if the llm_suggestion is a valid json
+        try:
+            _ = json.loads(llm_suggestion)
+        except json.decoder.JSONDecodeError as e:
+            return "Failed", llm_suggestion
+            
     return prompt_type, llm_suggestion
 

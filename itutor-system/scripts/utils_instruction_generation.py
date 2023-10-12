@@ -26,7 +26,8 @@ def assemble_instruction_generation_prompt(ui_spec, question):
      1. The UI components of the page. The components are derived from an Andriod UI specification,\
      and presented in JSON style. The key 'UI_type' denote the type of the component; \
      key 'semantics' provides the on-screen display of the UI component; 'name' \
-     denotes the id of this component. This will be provided with triple backticks. \
+     denotes the id of this component. Check for 'alternate-text' if it is an icon. \
+     This will be provided with triple backticks. \
      2. The command from the user will be provided after "User command".\
 
     Information starts here:
