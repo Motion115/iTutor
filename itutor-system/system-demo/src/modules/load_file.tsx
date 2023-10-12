@@ -1,5 +1,6 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Button } from "antd";
+import { EnterOutlined, UploadOutlined } from "@ant-design/icons";
 
 interface FileUploaderProps {
   onFileUpload: (jsonData: any) => void;
@@ -7,12 +8,14 @@ interface FileUploaderProps {
 
 const FileUploader: React.FC<FileUploaderProps> = ({ onFileUpload }) => {
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const [fileName, setFileName] = useState<string | undefined>(undefined);
 
   const handleFileChange = async (
     event: React.ChangeEvent<HTMLInputElement>
   ) => {
     const file = event.target.files?.[0];
     if (file) {
+      setFileName(file.name); // Set the file name
       try {
         const jsonData = await parseJsonFile(file);
         onFileUpload(jsonData);
@@ -55,7 +58,9 @@ const FileUploader: React.FC<FileUploaderProps> = ({ onFileUpload }) => {
         style={{ display: "none" }}
         onChange={handleFileChange}
       />
-      <Button onClick={handleUploadClick}>Upload</Button>
+      <Button onClick={handleUploadClick}>Upload <UploadOutlined /></Button>
+      {fileName && <p>Uploaded file: {fileName}</p>}{" "}
+      {/* Display the file name */}
     </div>
   );
 };

@@ -37,8 +37,6 @@ const App: React.FC = () => (
         </Header>
         <Routing></Routing>
         <Footer>
-          <Text>Last updated: September 2023. All Rights Reserved.</Text>
-          <br />
           <Text>
             Theme by{" "}
             <a

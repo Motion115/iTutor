@@ -5,7 +5,13 @@ const baseServerAddress = process.env.PUBLIC_URL;
 
 const items: MenuProps["items"] = [
   {
-    label: <a href={baseServerAddress + "/"}>Home</a>,
+    label: (
+      <a href={baseServerAddress + "/"}>
+        <div style={{ fontSize: "22px" }}>
+          <b>iTutor | GLM</b>
+        </div>
+      </a>
+    ),
     key: "Home",
   },
 ];
