@@ -9,59 +9,99 @@
         {
           "UI_type": "Icon",
           "alternate_text": "menu",
-          "name": 14
+          "name": 9
         },
         {
           "UI_type": "Text",
-          "semantics": "Leaderboard",
-          "name": 15
+          "semantics": "TOP NEWS",
+          "name": 10
+        },
+        {
+          "UI_type": "Icon",
+          "alternate_text": "list",
+          "name": 11
+        },
+        {
+          "UI_type": "Icon",
+          "alternate_text": "search",
+          "name": 12
         }
       ]
+    },
+    {
+      "UI_type": "Icon",
+      "alternate_text": "star",
+      "name": 2
     },
     {
       "UI_type": "Multi-Tab",
-      "name": 2,
+      "name": 3,
       "children": [
         {
           "UI_type": "Text",
-          "semantics": "THIS COURSE",
+          "semantics": "NBA",
+          "name": 13
+        },
+        {
+          "UI_type": "Text Button",
+          "semantics": "MLB",
+          "name": 14
+        },
+        {
+          "UI_type": "Text Button",
+          "semantics": "NCAAF",
+          "name": 15
+        },
+        {
+          "UI_type": "Text Button",
+          "semantics": "NCAAB",
           "name": 16
         },
         {
-          "UI_type": "Text",
-          "semantics": "TOTAL",
+          "UI_type": "Text Button",
+          "semantics": "NCAABBL",
           "name": 17
+        },
+        {
+          "UI_type": "Text Button",
+          "semantics": "NHL",
+          "name": 18
+        },
+        {
+          "UI_type": "Text",
+          "semantics": "NASCAR",
+          "name": 19
         }
       ]
-    },
-    {
-      "UI_type": "Text",
-      "semantics": "TOP LEARNERS",
-      "name": 3
     },
     {
       "UI_type": "List Item",
       "name": 4,
       "children": [
         {
-          "UI_type": "Icon",
-          "alternate_text": "avatar",
-          "name": 18
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "1",
-          "name": 19
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "Nikolay Nachev",
-          "name": 20
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "56876 XP",
-          "name": 21
+          "UI_type": "Card",
+          "name": 20,
+          "children": [
+            {
+              "UI_type": "Image",
+              "name": 25
+            },
+            {
+              "UI_type": "Text",
+              "semantics": "No. 7 North Carolina rallies to edge Tennessee ",
+              "name": 26
+            },
+            {
+              "UI_type": "Text",
+              "semantics": "1d ago",
+              "name": 27
+            },
+            {
+              "UI_type": "Icon",
+              "alternate_text": "share",
+              "name": 28
+            }
+          ]
         }
       ]
     },
@@ -70,24 +110,29 @@
       "name": 5,
       "children": [
         {
-          "UI_type": "Icon",
-          "alternate_text": "avatar",
-          "name": 22
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "2",
-          "name": 23
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "Dhaval Furia",
-          "name": 24
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "30851 XP",
-          "name": 25
+          "UI_type": "Card",
+          "name": 21,
+          "children": [
+            {
+              "UI_type": "Image",
+              "name": 29
+            },
+            {
+              "UI_type": "Text",
+              "semantics": "Northwestern's Falzon undergoes season-ending knee surgery",
+              "name": 30
+            },
+            {
+              "UI_type": "Text",
+              "semantics": "1d ago",
+              "name": 31
+            },
+            {
+              "UI_type": "Icon",
+              "alternate_text": "share",
+              "name": 32
+            }
+          ]
         }
       ]
     },
@@ -96,23 +141,29 @@
       "name": 6,
       "children": [
         {
-          "UI_type": "Image",
-          "name": 26
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "3",
-          "name": 27
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "Helen",
-          "name": 28
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "22369 XP",
-          "name": 29
+          "UI_type": "Card",
+          "name": 22,
+          "children": [
+            {
+              "UI_type": "Image",
+              "name": 33
+            },
+            {
+              "UI_type": "Text",
+              "semantics": "Florida State upends No. 21 Florida behind Bacon's 24 points ",
+              "name": 34
+            },
+            {
+              "UI_type": "Text",
+              "semantics": "1d ago",
+              "name": 35
+            },
+            {
+              "UI_type": "Icon",
+              "alternate_text": "share",
+              "name": 36
+            }
+          ]
         }
       ]
     },
@@ -121,24 +172,29 @@
       "name": 7,
       "children": [
         {
-          "UI_type": "Icon",
-          "alternate_text": "avatar",
-          "name": 30
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "4",
-          "name": 31
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "Celal Aybar",
-          "name": 32
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "30746 XP",
-          "name": 33
+          "UI_type": "Card",
+          "name": 23,
+          "children": [
+            {
+              "UI_type": "Image",
+              "name": 37
+            },
+            {
+              "UI_type": "Text",
+              "semantics": "Calipari's son copies Drake with 'crush everyday' warmup shirt",
+              "name": 38
+            },
+            {
+              "UI_type": "Text",
+              "semantics": "1d ago",
+              "name": 39
+            },
+            {
+              "UI_type": "Icon",
+              "alternate_text": "share",
+              "name": 40
+            }
+          ]
         }
       ]
     },
@@ -147,122 +203,28 @@
       "name": 8,
       "children": [
         {
-          "UI_type": "Icon",
-          "alternate_text": "avatar",
-          "name": 34
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "5",
-          "name": 35
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "Armen Armenia",
-          "name": 36
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "9683 XP",
-          "name": 37
-        }
-      ]
-    },
-    {
-      "UI_type": "Text",
-      "semantics": "\u2026 YOU ARE NEXT",
-      "name": 9
-    },
-    {
-      "UI_type": "List Item",
-      "name": 10,
-      "children": [
-        {
-          "UI_type": "Icon",
-          "alternate_text": "avatar",
-          "name": 38
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "455395",
-          "name": 39
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "ashwinj",
-          "name": 40
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "5 XP",
-          "name": 41
-        }
-      ]
-    },
-    {
-      "UI_type": "List Item",
-      "name": 11,
-      "children": [
-        {
-          "UI_type": "Icon",
-          "alternate_text": "avatar",
-          "name": 42
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "455396",
-          "name": 43
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "Matt",
-          "name": 44
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "5 XP",
-          "name": 45
-        }
-      ]
-    },
-    {
-      "UI_type": "List Item",
-      "name": 12,
-      "children": [
-        {
-          "UI_type": "Icon",
-          "alternate_text": "avatar",
-          "name": 46
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "455397",
-          "name": 47
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "Francisco Xavier Gayosso",
-          "name": 48
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "5 XP",
-          "name": 49
-        }
-      ]
-    },
-    {
-      "UI_type": "List Item",
-      "name": 13,
-      "children": [
-        {
-          "UI_type": "Image",
-          "name": 50
-        },
-        {
-          "UI_type": "Text",
-          "semantics": "Luenchung Fung",
-          "name": 51
+          "UI_type": "Card",
+          "name": 24,
+          "children": [
+            {
+              "UI_type": "Image",
+              "name": 41
+            },
+            {
+              "UI_type": "Text",
+              "semantics": "Report: SMU's Harry Froling to transfer out of program",
+              "name": 42
+            },
+            {
+              "UI_type": "Text",
+              "semantics": "1d ago",
+              "name": 43
+            },
+            {
+              "UI_type": "Image",
+              "name": 44
+            }
+          ]
         }
       ]
     }

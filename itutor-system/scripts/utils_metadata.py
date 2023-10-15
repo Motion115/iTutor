@@ -123,7 +123,7 @@ class MetadataRetrieval:
         return out_json
 
 if __name__ == "__main__":
-    src_file = "./hierarchies/295.json"
+    src_file = "./data/hierarchies/1709.json"
     mr = MetadataRetrieval(src_file)
     # mr.construct_tree()
     # mr.show_tree()

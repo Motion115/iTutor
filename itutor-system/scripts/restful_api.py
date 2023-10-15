@@ -37,9 +37,10 @@ def casify_and_call_response(json_data):
         # print(llm_suggestion)
         # check the response, remove the code notation for md
         llm_suggestion = llm_suggestion.replace("```", "")
-        # replace if it starts with "json "
-        if llm_suggestion.startswith("json "):
-            llm_suggestion = llm_suggestion.replace("json ", "")
+        # truncate everything before the first "{"
+        llm_suggestion = llm_suggestion[llm_suggestion.find("{"):]
+        # truncate everythin after the last "}"
+        llm_suggestion = llm_suggestion[:llm_suggestion.rfind("}") + 1]
         # replace 
         # check if the llm_suggestion is a valid json
         try:
