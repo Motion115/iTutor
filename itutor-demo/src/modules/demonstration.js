@@ -9,7 +9,7 @@ import JsonReader from "./demonstration-submodules/json-reader";
 // Import all the response here
 import MarkdownReader from "./demonstration-submodules/prompt-reader";
 
-const { Title, Paragraph } = Typography;
+const { Title, Paragraph, Text } = Typography;
 const { Content } = Layout;
 
 const progressBarContent = [
@@ -160,9 +160,10 @@ export default class Demonstration extends React.Component {
       case 1:
         return (
           <div>
-            <Paragraph>
-              <MarkdownReader display_id={display_id} />
-            </Paragraph>
+              <Text>
+                <MarkdownReader display_id={display_id} />
+              </Text>
+
           </div>
         );
       case 2:
@@ -170,7 +171,9 @@ export default class Demonstration extends React.Component {
           <div>
             <Row gutter={[16, 16]}>
               <Col span={12}>
-                <JsonReader display_id={display_id} />
+                <JsonReader
+                  display_id={display_id}
+                />
               </Col>
               <Col span={12}>
                 <ImageReader image_referer={this.state.command_state} />
@@ -179,7 +182,7 @@ export default class Demonstration extends React.Component {
           </div>
         );
       default:
-        return <div>cll</div>;
+        return <div>Empty</div>;
     }
   };
 

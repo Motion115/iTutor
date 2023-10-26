@@ -81,7 +81,7 @@ export default class InformationRetrievalModule extends React.Component {
             title={content[this.props.language]["description_title"]}
             description={content[this.props.language]["description"]}
             media={
-              <Paragraph style={{fontSize: "10px"}}>
+              <Paragraph style={{fontSize: "12px"}}>
                 <pre>
                   Your task is to act like a tutor, where you need to instruct a
                   user how to operate a given application and explain what this

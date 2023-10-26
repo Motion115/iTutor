@@ -37,4 +37,4 @@ ${
 $
 ```
 
-```Login to my account.```
+\```Login to my account.\```

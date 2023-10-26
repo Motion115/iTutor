@@ -19,7 +19,7 @@ export default class ContentBlock extends React.Component {
             </Paragraph>
           </Col>
           <Col span={9} style={{ padding: "8px 8px 8px 8px" }}>
-            <Paragraph style={{ fontSize: "14px", fontStyle: "oblique" }}>
+            <Paragraph style={{ fontSize: "14px"}}>
               {this.props.description}
             </Paragraph>
           </Col>

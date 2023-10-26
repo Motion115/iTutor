@@ -37,4 +37,4 @@ ${
 $
 ```
 
-```The interface is too bright, dim it a bit.```
+\```The interface is too bright, dim it a bit.\```

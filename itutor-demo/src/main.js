@@ -1,19 +1,27 @@
 import React from "react";
-import { Layout, Switch, ConfigProvider } from "antd";
+import { Layout, ConfigProvider, Dropdown, Space } from "antd";
 import { Button } from "antd";
-import { GithubOutlined, FilePdfOutlined } from "@ant-design/icons";
+import {
+  GithubOutlined,
+  FilePdfOutlined,
+  DownOutlined,
+  TranslationOutlined,
+} from "@ant-design/icons";
 import { Typography } from "antd";
 import Introduction from "./modules/introduction.js";
 import Demonstration from "./modules/demonstration.js";
 import Explanation from "./modules/explanation.js";
 import ConceptVideo from "./modules/concept-video.js";
 
-const { Title, Paragraph } = Typography;
+const { Title, Paragraph, Text } = Typography;
 const { Header, Footer, Content } = Layout;
 
 const defaultData = {
   borderRadius: "8px",
-  colorPrimary: "#DD78FF",
+  colorPrimary: "#7E7ED8",
+  fontFamily:
+    "Maven Pro, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue'",
+  fontFamilyCode: "Maven Pro",
 };
 
 const defaultContentStyle = {
@@ -28,7 +36,7 @@ const defaultHeaderFooterStyle = {
   width: "75%",
   margin: "0 auto",
   height: "auto",
-  background: "#4C6080",
+  background: "#3D4F88",
   lineHeight: "1",
   justifyContent: "center",
   alignItems: "center",
@@ -48,16 +56,6 @@ class GlobalLayout extends React.Component {
     alert("Ops...Coming soon!");
   };
 
-  setLanguage = () => {
-    let target_language = "english";
-    if (this.state.language === "english") {
-      target_language = "chinese";
-    }
-    this.setState({
-      language: target_language,
-    });
-  };
-
   render() {
     const content = {
       english:
@@ -65,8 +63,29 @@ class GlobalLayout extends React.Component {
       chinese: "老年人智能手机使用“引路人”",
     };
 
+    const items = [
+      {
+        key: "1",
+        label: "English",
+      },
+      {
+        key: "2",
+        label: "中文",
+      },
+    ];
+
     return (
-      <ConfigProvider theme={{ token: { ...defaultData } }}>
+      <ConfigProvider
+        theme={{
+          token: { ...defaultData },
+          components: {
+            Typography: {
+              titleMarginTop: "0.5em",
+              titleMarginBottom: "0.3em",
+            },
+          },
+        }}
+      >
         <Layout>
           <Header style={defaultHeaderFooterStyle}>
             <Title level={1} style={{ color: "#ffffff" }}>
@@ -78,16 +97,45 @@ class GlobalLayout extends React.Component {
               {content[this.state.language]}
               <br />
             </Title>
-            <Title level={5} style={{ color: "#ffffff" }}>
-              TJHCI-X
+            <Title
+              level={5}
+              style={{
+                color: "#ffffff",
+                fontSize: "16px",
+                padding: "0 0 10px 0",
+              }}
+            >
+              Ruishi Zou, Zi Ye, Chen Ye
+              <br />
+              Tongji University, Shanghai, China
             </Title>
             <Paragraph>
-              <Switch
-                checkedChildren="中文"
-                unCheckedChildren="English"
-                defaultChecked
-                onChange={() => this.setLanguage()}
-              />
+              <Dropdown
+                menu={{
+                  items,
+                  selectable: true,
+                  defaultSelectedKeys: ["1"],
+                  onClick: ({ key }) => {
+                    if (key === "1") {
+                      this.setState({
+                        language: "english",
+                      });
+                    } else {
+                      this.setState({
+                        language: "chinese",
+                      });
+                    }
+                  },
+                }}
+              >
+                <Button type="primary">
+                  <Space>
+                    <TranslationOutlined />
+                    {this.state.language === "english" ? "English" : "中文"}
+                    <DownOutlined />
+                  </Space>
+                </Button>
+              </Dropdown>
             </Paragraph>
             <Button
               type="primary"
@@ -99,7 +147,12 @@ class GlobalLayout extends React.Component {
               Github
             </Button>{" "}
             &nbsp;&nbsp;
-            <Button type="primary" onClick={() => this.alertNotRealized()}>
+            <Button
+              type="primary"
+              href="https://doi.org/10.1145/3586182.3616663"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <FilePdfOutlined />
               Paper
             </Button>
@@ -127,6 +180,10 @@ class GlobalLayout extends React.Component {
                 Ant Design
               </a>
             </Paragraph>
+            <Text style={{ color: "#ffffff" }}>
+              Special thanks to <b>Liangliang Chen</b> and <b>Ruiyi Liu</b> for
+              their assistance and participation in this project.
+            </Text>
           </Footer>
         </Layout>
       </ConfigProvider>

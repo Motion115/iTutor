@@ -35,8 +35,8 @@ export default class InformationRetrievalModule extends React.Component {
               <FireTwoTone
                 twoToneColor="#F3470D"
                 style={{ fontSize: "20px" }}
-              />
-              iTutor still under development.
+              />{" "}
+              iTutor is still under development.
             </div>
           ),
           plan: (

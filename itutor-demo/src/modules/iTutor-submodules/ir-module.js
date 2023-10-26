@@ -26,10 +26,6 @@ export default class InformationRetrievalModule extends React.Component {
             </a>{" "}
             embedding model. We obtained 95% accuracy in classifying the Enrico
             dataset's 20 classes using UI2Vec's embeddings.
-            <br />
-            However, the Enrico dataset is relatively small and the UI images
-            are slightly outdated (only up to 2017), so further work on
-            collecting new datasets and updating the UI2Vec model is needed.
           </div>
         ),
         "ui-component-classification": (

@@ -17,8 +17,8 @@ export default class ConceptVideo extends React.Component {
             <b>Concept Video</b>
           </Title>
 
-          <Paragraph style={{fontSize: "8px", textAlign: "center"}}>
-            Currently available in Chinese version.
+          <Paragraph style={{fontSize: "10px", textAlign: "center"}}>
+            Available in Chinese as a support material for C4-HCI competition.
           </Paragraph>
 
           <Row

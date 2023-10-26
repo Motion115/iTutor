@@ -40,4 +40,4 @@ ${
 $
 ```
 
-```I wonder if I have any new fans?```
+\```I wonder if I have any new fans?\```

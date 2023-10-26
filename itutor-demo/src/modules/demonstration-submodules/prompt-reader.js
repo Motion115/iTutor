@@ -28,7 +28,7 @@ function useRenderMarkdown(source_markdown) {
         setData(text);
       });
   }, [source_markdown]);
-  return <Markdown >{data}</Markdown>;
+  return <Markdown>{data}</Markdown>;
 }
 
 export default function MarkdownReader(props) {

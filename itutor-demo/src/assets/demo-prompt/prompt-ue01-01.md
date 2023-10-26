@@ -42,4 +42,4 @@ ${
 $
 ```
 
-```I don't want Onions on my hamburger.```
+\```I don't want Onions on my hamburger.\```

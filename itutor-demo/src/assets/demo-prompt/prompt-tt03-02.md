@@ -40,4 +40,4 @@ ${
 $
 ```
 
-```Check my new messages.```
+\```Check my new messages.\```
