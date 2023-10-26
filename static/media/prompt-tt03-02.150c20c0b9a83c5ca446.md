@@ -17,24 +17,27 @@ The metadata is as follows:
 
 ```json
 ${
-"Container": [
-"Iowa's 6-week abortion ban will
-'eliminate almost all abortion care' in the state"
+"Selector": [
+"New followers",
+"Activities",
+"System notifications"
 ],
 "Button": [
-"Switch to dark mode"
+"Find",
+"60s",
+"15s"
 ],
-"Tag": [
-"U.S",
-"Later"
+"Input": [
+"Search"
 ],
 "Menu":[
-"Top Stories",
-"Video",
-"Account"
+"Home",
+"Friends",
+"Inbox",
+         "Profile"
 ]
 }
 $
 ```
 
-```The interface is too bright, dim it a bit.```
+\```Check my new messages.\```

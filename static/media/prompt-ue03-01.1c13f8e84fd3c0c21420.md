@@ -37,4 +37,4 @@ ${
 $
 ```
 
-```I'd like to see what I ordered and check out.```
+\```I'd like to see what I ordered and check out.\```

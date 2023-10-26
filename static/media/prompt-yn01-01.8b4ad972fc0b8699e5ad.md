@@ -18,16 +18,15 @@ The metadata is as follows:
 ```json
 ${
 "Container": [
-"House approves Defense billcutting abortion access",
-"DA announces arrest in GilgoBeach murders on Long Island, N.Y",
-"Iowa governor signs bill banning most abortions",
-"Thailand cave rescuer reunites with boy"
+"Iowa's 6-week abortion ban will
+'eliminate almost all abortion care' in the state"
 ],
-"Icon": [
-"Play"
+"Button": [
+"Switch to dark mode"
 ],
 "Tag": [
-"Top videos"
+"U.S",
+"Later"
 ],
 "Menu":[
 "Top Stories",
@@ -38,4 +37,4 @@ ${
 $
 ```
 
-```What are some recent videos that people have been following?```
+\```I'd like to see the latest news from the United States.\```

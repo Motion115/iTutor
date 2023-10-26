@@ -37,4 +37,4 @@ ${
 $
 ```
 
-```Login to my account.```
+\```The interface is too bright, dim it a bit.\```

@@ -17,29 +17,22 @@ The metadata is as follows:
 
 ```json
 ${
+"Selector": [
+"Display Settings",
+"Video / Audio Settings",
+"Manage Alerts",
+"Terms of Services",
+"Privacy Policy",
+"Manage Privacy",
+"Help",
+"Send Feedback",
+"Credits"
+],
 "Icon": [
-      "Back",
-"Upload",
-"Plus",
-"Minus",
-"Border"
-],
-"Checkbox": [
-"DOUBLE",
-"NO BBO Sauce",
-"NO Smoked Bacon",
-"NO Crispy Onions",
-"NO Pickle Spear",
-"NO Cheddar"
-],
-"Container": [
-"BBQ Bacon Meltburger"
-],
-"Button": [
-"Add 1 to cart. "
+"Back"
 ]
 }
 $
 ```
 
-```I don't want Onions on my hamburger.```
+\```I'd like to make some suggestions for this software.\```

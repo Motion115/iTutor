@@ -17,27 +17,34 @@ The metadata is as follows:
 
 ```json
 ${
-"Selector": [
-"New followers",
-"Activities",
-"System notifications"
+"Icon": [
+"Upload",
+"Menu",
+"Retweet",
+"Lock",
+"Heart",
+"Tablet",
+"Plus",
+       "Footmark"
 ],
 "Button": [
-"Find",
-"60s",
-"15s"
+"Edit profile",
+"Add friends"
 ],
-"Input": [
-"Search"
-],
-"Menu":[
-"Home",
+"Tag":[
+         "Hide",
+         "Following",
+         "Followers",
+         "Likes"
+]
+"Menu": [
+      "Home ",
 "Friends",
-"Inbox",
-         "Profile"
+"Profile",
+"Inbox"
 ]
 }
 $
 ```
 
-```Check my new messages.```
+\```I want to look at the videos I've liked.\```

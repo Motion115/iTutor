@@ -17,27 +17,25 @@ The metadata is as follows:
 
 ```json
 ${
-"Selector": [
-"New followers",
-"Activities",
-"System notifications"
+"Container": [
+"House approves Defense billcutting abortion access",
+"DA announces arrest in GilgoBeach murders on Long Island, N.Y",
+"Iowa governor signs bill banning most abortions",
+"Thailand cave rescuer reunites with boy"
 ],
-"Button": [
-"Find",
-"60s",
-"15s"
+"Icon": [
+"Play"
 ],
-"Input": [
-"Search"
+"Tag": [
+"Top videos"
 ],
 "Menu":[
-"Home",
-"Friends",
-"Inbox",
-         "Profile"
+"Top Stories",
+"Video",
+"Account"
 ]
 }
 $
 ```
 
-```I wonder if I have any new fans?```
+\```What are some recent videos that people have been following?\```

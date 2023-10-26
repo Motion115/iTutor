@@ -17,34 +17,27 @@ The metadata is as follows:
 
 ```json
 ${
-"Icon": [
-"Upload",
-"Menu",
-"Retweet",
-"Lock",
-"Heart",
-"Tablet",
-"Plus",
-       "Footmark"
+"Selector": [
+"New followers",
+"Activities",
+"System notifications"
 ],
 "Button": [
-"Edit profile",
-"Add friends"
+"Find",
+"60s",
+"15s"
 ],
-"Tag":[
-         "Hide",
-         "Following",
-         "Followers",
-         "Likes"
-]
-"Menu": [
-      "Home ",
+"Input": [
+"Search"
+],
+"Menu":[
+"Home",
 "Friends",
-"Profile",
-"Inbox"
+"Inbox",
+         "Profile"
 ]
 }
 $
 ```
 
-```I want to add my neighbor as my friend on Tiktok.```
+\```I wonder if I have any new fans?\```
